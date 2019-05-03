@@ -1,5 +1,7 @@
 # Project Proposal: What contributes to suicide rate?
+
 by Team Bug
+
 Author: Chuqian Yin, Claire Zhang, Yu Du, Mengjiao Li
 
 
@@ -14,7 +16,7 @@ There are many pieces of psychology research that have studied the area, and her
 We are planning on using multiple datasets to study suicide-related mental health issues.
 The first data collect information about countries’ **GDP** and **prevalence of depression** from 1990 and 2017. The data was accessed from [Our World in Data](https://ourworldindata.org/mental-health#depression) (section: Prevalence of depressive disorders). The GDP data was published by the Global Burden of Disease Collaborative Network and was also the Global Burden of Disease Study 2016 (GBD 2016) Results. The prevalence of depression data was initially published by the World Bank. We will use this data to study the relationship between depression and GDP, and answer the question that “Worldwide, how do external factors such as GDP, impact populations’ mental health, transfer to suicide rate? ”.
 
-The second data provides information about suicide rates in countries in the world from 1987 to 2010, including the rates across genders and different age groups. The data was accessed from [Kaggle] (https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016). This compiled data set contains information originally from 4 sources: United Nations Development Program, World Bank, Suicide in the Twenty-First Century and World Health Organization. We will use this data to study mental health problems and the suicide rate in different areas and different age groups, and answer the question “ How do mental health problems contribute to suicide rate?” By using these two data sets, we could explore external factors around suicide to the world level.
+The second data provides information about suicide rates in countries in the world from 1987 to 2010, including the rates across genders and different age groups. The data was accessed from [Kaggle](https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016). This compiled data set contains information originally from 4 sources: United Nations Development Program, World Bank, Suicide in the Twenty-First Century and World Health Organization. We will use this data to study mental health problems and the suicide rate in different areas and different age groups, and answer the question “ How do mental health problems contribute to suicide rate?” By using these two data sets, we could explore external factors around suicide to the world level.
 
 The third data we use focus risk behaviors and anxiety in the U.S.A. from 2011 to 2015. We accessed it from [Kaggle](https://www.kaggle.com/cdc/behavioral-risk-factor-surveillance-system#2012.csv). This data is collected by the Behavioral Risk Factor Surveillance System (BRFSS) using survey via telephone and collect data about health-related risk behaviors, chronic health conditions, and use of preventive services. Residents from all 50 states are included and more than 400,000 adults are interviewed, which makes it the largest continuously conducted health survey system in the world. The dataset includes numerous amount of risk factors that we could draw connections with depression and other mental disorders.
 
@@ -52,7 +54,7 @@ We have created the [public repository](https://github.com/helenlaire/HealthRepo
 
 We have also created a group chat for communication.
 
-# Reference
+## Reference
 Reference
 [1] Franklin, J., Huang, X., & Bastidas, D. (2018). Virtual reality suicide: Development of a translational approach for studying suicide causes. Behaviour Research and Therapy, Behaviour Research and Therapy, 12/2018.
 https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=TN_crossref10.1016/j.brat.2018.12.013&context=PC&vid=UW&search_scope=all&tab=default_tab&lang=en_US
