@@ -9,13 +9,13 @@ library(tidyr)
 
 
 # data_2015 <- read.csv("Prevention-Mengjiao/data/2015.csv", stringsAsFactors = FALSE)
-
+# 
 # data <- data_2015 %>%
 #   select(
 #     SEQNO,
 #     X_STSTR,
 #     X_LLCPWT,
-#     
+# 
 #     MENTHLTH, # number of days mental health not good
 #     # HLTHPLN1 # have any health care coverage
 #     # exerany2, # exercise in Past 30 Days
@@ -23,7 +23,7 @@ library(tidyr)
 #     # lsatisfy, # Satisfaction with life
 #     # adanxev # ever told anxiety
 #   )
-
+# 
 # write.csv(data, file = "Prevention-Mengjiao/data/chart1.csv")
 
 data <- read.csv("Prevention-Mengjiao/data/chart1.csv", stringsAsFactors = FALSE)
@@ -38,18 +38,39 @@ risk_healthcare <- data %>%
     MEDCOST=replace(MEDCOST, MEDCOST == 7 | MEDCOST == 9, NA),
     MEDCOST=replace(MEDCOST, MEDCOST == 2, "NO"),
     MEDCOST=replace(MEDCOST, MEDCOST == 1, "YES")
-  ) %>%
-  group_by(MEDCOST, MENTHLTH) %>%
-  summarise(num = n()) %>%
-  filter(!is.na(MEDCOST), !is.na(MENTHLTH))
+  ) 
+# %>%
+#   group_by(MEDCOST, MENTHLTH) %>%
+#   summarise(num = n()) %>%
+#   filter(!is.na(MEDCOST), !is.na(MENTHLTH))
 
+healthcare_design <- svydesign(
+  weights = ~X_LLCPWT,
+  data = risk_healthcare,
+  id = ~SEQNO,
+  nest = TRUE)
 
-mental_healthcare_graph <- ggplot(data=risk_healthcare, aes(x=MENTHLTH, y=num)) +
-  geom_line(aes(col=MEDCOST)) +
-  theme_minimal() +
-  scale_fill_brewer(palette="Blues") +
-  labs(title="Number of Days Mental Health Not Good vs. HealthCare Cost",
-       x="Number of Days Mental Health Not Good",
-       y="Number of People")
+use_smokeless <-svymean(~MENTHLTH, healthcare_design, na.rm=T)
 
-ggsave("Prevention-Mengjiao/chart/age_sex.png", width = 10, height = 10, dpi = 300, units = c("in", "cm", "mm"))
+mental_afford <- svyby(~MEDCOST, by = ~MENTHLTH, healthcare_design, FUN = svymean, na.rm=T)
+
+# mental_healthcare_graph <- ggplot(data=risk_healthcare, aes(x=MENTHLTH, y=num)) +
+#   geom_line(aes(col=MEDCOST)) +
+#   theme_minimal() +
+#   scale_fill_brewer(palette="Blues") +
+#   labs(title="Number of Days Mental Health Not Good vs. HealthCare Cost",
+#        x="Number of Days Mental Health Not Good",
+#        y="Number of People")
+# 
+# ggsave("Prevention-Mengjiao/chart/age_sex.png", width = 10, height = 10, dpi = 300, units = c("in", "cm", "mm"))
+
+# mental_healthcare_graph <- ggplot(data=risk_healthcare, aes(x=MENTHLTH, y=num)) +
+#   geom_point(aes(col=MEDCOST)) +
+#   theme_minimal() +
+#   scale_fill_brewer(palette="Blues") +
+#   labs(title="Number of Days Mental Health Not Good vs. HealthCare Cost",
+#        x="Number of Days Mental Health Not Good",
+#        y="Number of People")
+# 
+# ggsave("Prevention-Mengjiao/chart/age_sex.png", width = 10, height = 10, dpi = 300, units = c("in", "cm", "mm"))
+
