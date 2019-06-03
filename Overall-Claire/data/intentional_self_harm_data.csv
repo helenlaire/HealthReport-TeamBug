@@ -1,0 +1,1109 @@
+﻿State,Gender,Year,Death,Population,"Crude Rate per 100,000"
+Alabama (01),Female,2000,112,"2,300,596",4.9
+Alabama (01),Female,2001,97,"2,309,496",4.2
+Alabama (01),Female,2002,99,"2,314,370",4.3
+Alabama (01),Female,2003,96,"2,324,069",4.1
+Alabama (01),Female,2004,97,"2,337,857",4.1
+Alabama (01),Female,2005,96,"2,356,423",4.1
+Alabama (01),Female,2006,96,"2,385,480",4
+Alabama (01),Female,2007,122,"2,407,275",5.1
+Alabama (01),Female,2008,121,"2,430,257",5
+Alabama (01),Female,2009,130,"2,448,159",5.3
+Alabama (01),Female,2010,141,"2,459,548",5.7
+Alabama (01),Male,2000,471,"2,146,504",21.9
+Alabama (01),Male,2001,415,"2,158,138",19.2
+Alabama (01),Male,2002,415,"2,165,719",19.2
+Alabama (01),Male,2003,425,"2,179,422",19.5
+Alabama (01),Male,2004,444,"2,192,872",20.2
+Alabama (01),Male,2005,439,"2,213,382",19.8
+Alabama (01),Male,2006,484,"2,243,501",21.6
+Alabama (01),Male,2007,470,"2,265,565",20.7
+Alabama (01),Male,2008,483,"2,287,949",21.1
+Alabama (01),Male,2009,543,"2,309,779",23.5
+Alabama (01),Male,2010,538,"2,320,188",23.2
+Alaska (02),Female,2000,25,"302,820",8.3
+Alaska (02),Female,2001,20,"305,579",6.5
+Alaska (02),Female,2002,35,"309,633",11.3
+Alaska (02),Female,2003,25,"313,034",8
+Alaska (02),Female,2004,37,"317,807",11.6
+Alaska (02),Female,2005,27,"320,920",8.4
+Alaska (02),Female,2006,31,"325,121",9.5
+Alaska (02),Female,2007,26,"327,138",7.9
+Alaska (02),Female,2008,34,"329,412",10.3
+Alaska (02),Female,2009,32,"337,002",9.5
+Alaska (02),Female,2010,34,"340,603",10
+Alaska (02),Male,2000,112,"324,112",34.6
+Alaska (02),Male,2001,82,"328,135",25
+Alaska (02),Male,2002,97,"332,704",29.2
+Alaska (02),Male,2003,99,"335,380",29.5
+Alaska (02),Male,2004,118,"341,479",34.6
+Alaska (02),Male,2005,104,"346,026",30.1
+Alaska (02),Male,2006,104,"350,181",29.7
+Alaska (02),Male,2007,123,"353,162",34.8
+Alaska (02),Male,2008,135,"358,043",37.7
+Alaska (02),Male,2009,111,"361,893",30.7
+Alaska (02),Male,2010,130,"369,628",35.2
+Arizona (04),Female,2000,156,"2,569,575",6.1
+Arizona (04),Female,2001,145,"2,641,676",5.5
+Arizona (04),Female,2002,171,"2,704,217",6.3
+Arizona (04),Female,2003,172,"2,764,077",6.2
+Arizona (04),Female,2004,186,"2,835,606",6.6
+Arizona (04),Female,2005,200,"2,930,811",6.8
+Arizona (04),Female,2006,213,"3,026,134",7
+Arizona (04),Female,2007,217,"3,096,998",7
+Arizona (04),Female,2008,232,"3,155,278",7.4
+Arizona (04),Female,2009,266,"3,189,908",8.3
+Arizona (04),Female,2010,225,"3,216,194",7
+Arizona (04),Male,2000,628,"2,561,057",24.5
+Arizona (04),Male,2001,622,"2,631,801",23.6
+Arizona (04),Male,2002,715,"2,692,038",26.6
+Arizona (04),Male,2003,667,"2,746,287",24.3
+Arizona (04),Male,2004,694,"2,816,798",24.6
+Arizona (04),Male,2005,743,"2,908,266",25.5
+Arizona (04),Male,2006,764,"3,003,007",25.4
+Arizona (04),Male,2007,798,"3,070,683",26
+Arizona (04),Male,2008,740,"3,125,084",23.7
+Arizona (04),Male,2009,792,"3,153,246",25.1
+Arizona (04),Male,2010,868,"3,175,823",27.3
+Arkansas (05),Female,2000,69,"1,368,707",5
+Arkansas (05),Female,2001,68,"1,376,845",4.9
+Arkansas (05),Female,2002,66,"1,383,239",4.8
+Arkansas (05),Female,2003,72,"1,391,523",5.2
+Arkansas (05),Female,2004,70,"1,403,048",5
+Arkansas (05),Female,2005,86,"1,418,295",6.1
+Arkansas (05),Female,2006,63,"1,438,428",4.4
+Arkansas (05),Female,2007,80,"1,451,358",5.5
+Arkansas (05),Female,2008,118,"1,464,220",8.1
+Arkansas (05),Female,2009,85,"1,475,013",5.8
+Arkansas (05),Female,2010,87,"1,484,281",5.9
+Arkansas (05),Male,2000,280,"1,304,693",21.5
+Arkansas (05),Male,2001,314,"1,314,726",23.9
+Arkansas (05),Male,2002,311,"1,322,688",23.5
+Arkansas (05),Male,2003,302,"1,333,293",22.7
+Arkansas (05),Male,2004,291,"1,346,638",21.6
+Arkansas (05),Male,2005,314,"1,362,802",23
+Arkansas (05),Male,2006,313,"1,383,333",22.6
+Arkansas (05),Male,2007,322,"1,397,292",23
+Arkansas (05),Male,2008,329,"1,410,334",23.3
+Arkansas (05),Male,2009,337,"1,421,830",23.7
+Arkansas (05),Male,2010,360,"1,431,637",25.1
+California (06),Female,2000,618,"16,996,756",3.6
+California (06),Female,2001,504,"17,294,223",2.9
+California (06),Female,2002,711,"17,498,462",4.1
+California (06),Female,2003,735,"17,709,509",4.2
+California (06),Female,2004,822,"17,871,415",4.6
+California (06),Female,2005,738,"17,996,230",4.1
+California (06),Female,2006,756,"18,097,471",4.2
+California (06),Female,2007,832,"18,214,926",4.6
+California (06),Female,2008,879,"18,396,972",4.8
+California (06),Female,2009,914,"18,583,075",4.9
+California (06),Female,2010,883,"18,736,126",4.7
+California (06),Male,2000,"2,350","16,874,892",13.9
+California (06),Male,2001,"2,325","17,185,235",13.5
+California (06),Male,2002,"2,516","17,373,381",14.5
+California (06),Male,2003,"2,661","17,543,650",15.2
+California (06),Male,2004,"2,544","17,703,161",14.4
+California (06),Male,2005,"2,467","17,831,713",13.8
+California (06),Male,2006,"2,576","17,923,731",14.4
+California (06),Male,2007,"2,768","18,035,385",15.3
+California (06),Male,2008,"2,894","18,207,365",15.9
+California (06),Male,2009,"2,908","18,378,154",15.8
+California (06),Male,2010,"3,027","18,517,830",16.3
+Colorado (08),Female,2000,118,"2,135,278",5.5
+Colorado (08),Female,2001,151,"2,195,705",6.9
+Colorado (08),Female,2002,143,"2,228,665",6.4
+Colorado (08),Female,2003,157,"2,253,214",7
+Colorado (08),Female,2004,186,"2,274,511",8.2
+Colorado (08),Female,2005,166,"2,308,238",7.2
+Colorado (08),Female,2006,173,"2,352,960",7.4
+Colorado (08),Female,2007,179,"2,396,433",7.5
+Colorado (08),Female,2008,184,"2,439,060",7.5
+Colorado (08),Female,2009,212,"2,480,710",8.5
+Colorado (08),Female,2010,201,"2,508,534",8
+Colorado (08),Male,2000,495,"2,165,983",22.9
+Colorado (08),Male,2001,571,"2,229,982",25.6
+Colorado (08),Male,2002,584,"2,261,741",25.8
+Colorado (08),Male,2003,571,"2,275,518",25.1
+Colorado (08),Male,2004,611,"2,300,502",26.6
+Colorado (08),Male,2005,634,"2,323,650",27.3
+Colorado (08),Male,2006,557,"2,367,463",23.5
+Colorado (08),Male,2007,632,"2,407,435",26.3
+Colorado (08),Male,2008,619,"2,450,670",25.3
+Colorado (08),Male,2009,729,"2,491,485",29.3
+Colorado (08),Male,2010,664,"2,520,662",26.3
+Connecticut (09),Female,2000,61,"1,756,246",3.5
+Connecticut (09),Female,2001,52,"1,768,959",2.9
+Connecticut (09),Female,2002,54,"1,780,500",3
+Connecticut (09),Female,2003,66,"1,793,468",3.7
+Connecticut (09),Female,2004,64,"1,798,078",3.6
+Connecticut (09),Female,2005,64,"1,802,068",3.6
+Connecticut (09),Female,2006,60,"1,807,675",3.3
+Connecticut (09),Female,2007,58,"1,811,617",3.2
+Connecticut (09),Female,2008,70,"1,820,749",3.8
+Connecticut (09),Female,2009,79,"1,828,779",4.3
+Connecticut (09),Female,2010,74,"1,834,483",4
+Connecticut (09),Male,2000,243,"1,649,319",14.7
+Connecticut (09),Male,2001,231,"1,663,876",13.9
+Connecticut (09),Male,2002,205,"1,678,249",12.2
+Connecticut (09),Male,2003,206,"1,690,868",12.2
+Connecticut (09),Male,2004,230,"1,698,016",13.5
+Connecticut (09),Male,2005,231,"1,704,888",13.5
+Connecticut (09),Male,2006,232,"1,709,785",13.6
+Connecticut (09),Male,2007,213,"1,715,653",12.4
+Connecticut (09),Male,2008,245,"1,724,830",14.2
+Connecticut (09),Male,2009,237,"1,733,028",13.7
+Connecticut (09),Male,2010,279,"1,739,614",16
+Delaware (10),Female,2000,20,"403,059",5
+Delaware (10),Female,2001,23,"409,349",5.6
+Delaware (10),Female,2003,25,"420,802",5.9
+Delaware (10),Female,2004,23,"427,320",5.4
+Delaware (10),Female,2005,14,"435,227",Unreliable
+Delaware (10),Female,2006,17,"442,766",Unreliable
+Delaware (10),Female,2007,24,"449,398",5.3
+Delaware (10),Female,2008,21,"455,481",4.6
+Delaware (10),Female,2009,21,"459,795",4.6
+Delaware (10),Female,2010,18,"462,995",Unreliable
+Delaware (10),Male,2000,62,"380,541",16.3
+Delaware (10),Male,2001,85,"386,350",22
+Delaware (10),Male,2002,66,"391,517",16.9
+Delaware (10),Male,2003,69,"397,201",17.4
+Delaware (10),Male,2004,70,"403,483",17.3
+Delaware (10),Male,2005,69,"409,923",16.8
+Delaware (10),Male,2006,74,"416,502",17.8
+Delaware (10),Male,2007,71,"422,351",16.8
+Delaware (10),Male,2008,88,"428,393",20.5
+Delaware (10),Male,2009,86,"431,935",19.9
+Delaware (10),Male,2010,88,"434,939",20.2
+District of Columbia (11),Female,2007,12,"302,949",Unreliable
+District of Columbia (11),Female,2008,10,"306,265",Unreliable
+District of Columbia (11),Male,2000,18,"269,366",Unreliable
+District of Columbia (11),Male,2001,34,"270,764",12.6
+District of Columbia (11),Male,2002,23,"270,012",8.5
+District of Columbia (11),Male,2003,31,"267,895",11.6
+District of Columbia (11),Male,2004,27,"267,470",10.1
+District of Columbia (11),Male,2005,24,"267,523",9
+District of Columbia (11),Male,2006,24,"269,359",8.9
+District of Columbia (11),Male,2007,24,"271,455",8.8
+District of Columbia (11),Male,2008,33,"273,971",12
+District of Columbia (11),Male,2009,26,"280,400",9.3
+District of Columbia (11),Male,2010,33,"284,222",11.6
+Florida (12),Female,2000,421,"8,184,663",5.1
+Florida (12),Female,2001,512,"8,372,776",6.1
+Florida (12),Female,2002,520,"8,541,734",6.1
+Florida (12),Female,2003,497,"8,697,573",5.7
+Florida (12),Female,2004,589,"8,902,447",6.6
+Florida (12),Female,2005,577,"9,117,950",6.3
+Florida (12),Female,2006,561,"9,280,080",6
+Florida (12),Female,2007,586,"9,378,587",6.2
+Florida (12),Female,2008,618,"9,465,279",6.5
+Florida (12),Female,2009,619,"9,534,289",6.5
+Florida (12),Female,2010,627,"9,611,955",6.5
+Florida (12),Male,2000,"1,664","7,797,715",21.3
+Florida (12),Male,2001,"1,802","7,984,190",22.6
+Florida (12),Male,2002,"1,817","8,147,636",22.3
+Florida (12),Male,2003,"1,798","8,306,512",21.6
+Florida (12),Male,2004,"1,798","8,512,871",21.1
+Florida (12),Male,2005,"1,769","8,724,088",20.3
+Florida (12),Male,2006,"1,879","8,886,910",21.1
+Florida (12),Male,2007,"2,000","8,989,255",22.2
+Florida (12),Male,2008,"2,122","9,062,026",23.4
+Florida (12),Male,2009,"2,238","9,118,355",24.5
+Florida (12),Male,2010,"2,162","9,189,355",23.5
+Georgia (13),Female,2000,181,"4,159,340",4.4
+Georgia (13),Female,2001,182,"4,256,162",4.3
+Georgia (13),Female,2002,177,"4,327,934",4.1
+Georgia (13),Female,2003,175,"4,394,952",4
+Georgia (13),Female,2004,200,"4,463,524",4.5
+Georgia (13),Female,2005,179,"4,555,263",3.9
+Georgia (13),Female,2006,193,"4,670,606",4.1
+Georgia (13),Female,2007,196,"4,777,572",4.1
+Georgia (13),Female,2008,221,"4,856,984",4.6
+Georgia (13),Female,2009,248,"4,917,756",5
+Georgia (13),Female,2010,241,"4,958,482",4.9
+Georgia (13),Male,2000,666,"4,027,113",16.5
+Georgia (13),Male,2001,753,"4,120,876",18.3
+Georgia (13),Male,2002,732,"4,180,322",17.5
+Georgia (13),Male,2003,797,"4,227,841",18.9
+Georgia (13),Male,2004,773,"4,305,728",18
+Georgia (13),Male,2005,745,"4,370,659",17
+Georgia (13),Male,2006,730,"4,485,207",16.3
+Georgia (13),Male,2007,801,"4,572,416",17.5
+Georgia (13),Male,2008,760,"4,647,859",16.4
+Georgia (13),Male,2009,885,"4,703,090",18.8
+Georgia (13),Male,2010,892,"4,729,171",18.9
+Hawaii (15),Female,2000,26,"602,866",4.3
+Hawaii (15),Female,2001,33,"609,189",5.4
+Hawaii (15),Female,2002,26,"616,192",4.2
+Hawaii (15),Female,2003,33,"623,753",5.3
+Hawaii (15),Female,2004,26,"636,864",4.1
+Hawaii (15),Female,2005,33,"644,813",5.1
+Hawaii (15),Female,2006,32,"652,351",4.9
+Hawaii (15),Female,2007,32,"657,185",4.9
+Hawaii (15),Female,2008,40,"665,313",6
+Hawaii (15),Female,2009,37,"673,075",5.5
+Hawaii (15),Female,2010,48,"679,058",7.1
+Hawaii (15),Male,2000,111,"608,671",18.2
+Hawaii (15),Male,2001,103,"616,759",16.7
+Hawaii (15),Male,2002,94,"623,421",15.1
+Hawaii (15),Male,2003,98,"627,401",15.6
+Hawaii (15),Male,2004,90,"636,705",14.1
+Hawaii (15),Male,2005,74,"647,916",11.4
+Hawaii (15),Male,2006,88,"657,380",13.4
+Hawaii (15),Male,2007,101,"658,490",15.3
+Hawaii (15),Male,2008,93,"666,900",13.9
+Hawaii (15),Male,2009,138,"673,642",20.5
+Hawaii (15),Male,2010,159,"681,243",23.3
+Idaho (16),Female,2000,27,"645,293",4.2
+Idaho (16),Female,2001,53,"658,043",8.1
+Idaho (16),Female,2002,26,"668,686",3.9
+Idaho (16),Female,2003,32,"679,877",4.7
+Idaho (16),Female,2004,45,"693,186",6.5
+Idaho (16),Female,2005,35,"711,983",4.9
+Idaho (16),Female,2006,43,"732,104",5.9
+Idaho (16),Female,2007,34,"750,127",4.5
+Idaho (16),Female,2008,49,"764,792",6.4
+Idaho (16),Female,2009,70,"775,398",9
+Idaho (16),Female,2010,53,"782,258",6.8
+Idaho (16),Male,2000,140,"648,660",21.6
+Idaho (16),Male,2001,157,"661,919",23.7
+Idaho (16),Male,2002,175,"671,686",26.1
+Idaho (16),Male,2003,185,"683,503",27.1
+Idaho (16),Male,2004,191,"698,616",27.3
+Idaho (16),Male,2005,193,"716,258",26.9
+Idaho (16),Male,2006,179,"736,565",24.3
+Idaho (16),Male,2007,189,"754,978",25
+Idaho (16),Male,2008,203,"769,528",26.4
+Idaho (16),Male,2009,234,"779,041",30
+Idaho (16),Male,2010,237,"785,324",30.2
+Illinois (17),Female,2000,187,"6,338,957",3
+Illinois (17),Female,2001,215,"6,370,443",3.4
+Illinois (17),Female,2002,218,"6,387,897",3.4
+Illinois (17),Female,2003,178,"6,402,859",2.8
+Illinois (17),Female,2004,209,"6,414,209",3.3
+Illinois (17),Female,2005,222,"6,423,831",3.5
+Illinois (17),Female,2006,200,"6,440,022",3.1
+Illinois (17),Female,2007,225,"6,467,577",3.5
+Illinois (17),Female,2008,231,"6,493,537",3.6
+Illinois (17),Female,2009,255,"6,520,723",3.9
+Illinois (17),Female,2010,236,"6,538,356",3.6
+Illinois (17),Male,2000,816,"6,080,336",13.4
+Illinois (17),Male,2001,924,"6,118,002",15.1
+Illinois (17),Male,2002,927,"6,137,659",15.1
+Illinois (17),Male,2003,832,"6,153,147",13.5
+Illinois (17),Male,2004,819,"6,175,564",13.3
+Illinois (17),Male,2005,864,"6,186,072",14
+Illinois (17),Male,2006,810,"6,203,933",13.1
+Illinois (17),Male,2007,883,"6,228,289",14.2
+Illinois (17),Male,2008,967,"6,253,501",15.5
+Illinois (17),Male,2009,922,"6,276,055",14.7
+Illinois (17),Male,2010,941,"6,292,276",15
+Indiana (18),Female,2000,119,"3,098,011",3.8
+Indiana (18),Female,2001,145,"3,120,158",4.6
+Indiana (18),Female,2002,135,"3,133,342",4.3
+Indiana (18),Female,2003,133,"3,152,366",4.2
+Indiana (18),Female,2004,141,"3,168,952",4.4
+Indiana (18),Female,2005,122,"3,191,481",3.8
+Indiana (18),Female,2006,150,"3,218,203",4.7
+Indiana (18),Female,2007,166,"3,241,454",5.1
+Indiana (18),Female,2008,159,"3,263,963",4.9
+Indiana (18),Female,2009,146,"3,281,477",4.4
+Indiana (18),Female,2010,192,"3,294,065",5.8
+Indiana (18),Male,2000,564,"2,982,474",18.9
+Indiana (18),Male,2001,570,"3,007,602",19
+Indiana (18),Male,2002,608,"3,022,625",20.1
+Indiana (18),Male,2003,603,"3,044,272",19.8
+Indiana (18),Male,2004,563,"3,064,055",18.4
+Indiana (18),Male,2005,623,"3,087,135",20.2
+Indiana (18),Male,2006,674,"3,114,466",21.6
+Indiana (18),Male,2007,624,"3,138,145",19.9
+Indiana (18),Male,2008,650,"3,160,843",20.6
+Indiana (18),Male,2009,682,"3,177,848",21.5
+Indiana (18),Male,2010,672,"3,189,737",21.1
+Iowa (19),Female,2000,44,"1,490,809",3
+Iowa (19),Female,2001,46,"1,492,287",3.1
+Iowa (19),Female,2002,64,"1,491,450",4.3
+Iowa (19),Female,2003,60,"1,493,907",4
+Iowa (19),Female,2004,56,"1,498,888",3.7
+Iowa (19),Female,2005,78,"1,503,019",5.2
+Iowa (19),Female,2006,62,"1,511,124",4.1
+Iowa (19),Female,2007,62,"1,518,023",4.1
+Iowa (19),Female,2008,72,"1,525,539",4.7
+Iowa (19),Female,2009,68,"1,532,739",4.4
+Iowa (19),Female,2010,68,"1,538,036",4.4
+Iowa (19),Male,2000,245,"1,435,515",17.1
+Iowa (19),Male,2001,258,"1,439,710",17.9
+Iowa (19),Male,2002,250,"1,442,784",17.3
+Iowa (19),Male,2003,292,"1,448,092",20.2
+Iowa (19),Male,2004,287,"1,454,747",19.7
+Iowa (19),Male,2005,255,"1,461,435",17.4
+Iowa (19),Male,2006,272,"1,471,520",18.5
+Iowa (19),Male,2007,260,"1,481,189",17.6
+Iowa (19),Male,2008,308,"1,491,195",20.7
+Iowa (19),Male,2009,293,"1,500,131",19.5
+Iowa (19),Male,2010,304,"1,508,319",20.2
+Kansas (20),Female,2000,54,"1,359,944",4
+Kansas (20),Female,2001,55,"1,365,966",4
+Kansas (20),Female,2002,59,"1,371,898",4.3
+Kansas (20),Female,2003,76,"1,377,415",5.5
+Kansas (20),Female,2004,79,"1,382,396",5.7
+Kansas (20),Female,2005,62,"1,387,958",4.5
+Kansas (20),Female,2006,70,"1,394,092",5
+Kansas (20),Female,2007,71,"1,405,705",5.1
+Kansas (20),Female,2008,51,"1,415,563",3.6
+Kansas (20),Female,2009,69,"1,428,139",4.8
+Kansas (20),Female,2010,81,"1,437,710",5.6
+Kansas (20),Male,2000,271,"1,328,474",20.4
+Kansas (20),Male,2001,238,"1,336,196",17.8
+Kansas (20),Male,2002,286,"1,341,637",21.3
+Kansas (20),Male,2003,271,"1,345,589",20.1
+Kansas (20),Male,2004,291,"1,351,977",21.5
+Kansas (20),Male,2005,300,"1,357,341",22.1
+Kansas (20),Male,2006,309,"1,368,839",22.6
+Kansas (20),Male,2007,311,"1,378,080",22.6
+Kansas (20),Male,2008,286,"1,392,513",20.5
+Kansas (20),Male,2009,313,"1,404,565",22.3
+Kansas (20),Male,2010,320,"1,415,408",22.6
+Kentucky (21),Female,2000,85,"2,066,401",4.1
+Kentucky (21),Female,2001,91,"2,076,871",4.4
+Kentucky (21),Female,2002,95,"2,087,223",4.6
+Kentucky (21),Female,2003,96,"2,102,308",4.6
+Kentucky (21),Female,2004,96,"2,112,051",4.5
+Kentucky (21),Female,2005,112,"2,129,658",5.3
+Kentucky (21),Female,2006,107,"2,149,096",5
+Kentucky (21),Female,2007,123,"2,164,210",5.7
+Kentucky (21),Female,2008,118,"2,183,532",5.4
+Kentucky (21),Female,2009,123,"2,193,136",5.6
+Kentucky (21),Female,2010,111,"2,204,415",5
+Kentucky (21),Male,2000,436,"1,975,368",22.1
+Kentucky (21),Male,2001,404,"1,991,261",20.3
+Kentucky (21),Male,2002,444,"2,002,652",22.2
+Kentucky (21),Male,2003,471,"2,014,862",23.4
+Kentucky (21),Male,2004,463,"2,034,050",22.8
+Kentucky (21),Male,2005,454,"2,053,084",22.1
+Kentucky (21),Male,2006,515,"2,070,143",24.9
+Kentucky (21),Male,2007,526,"2,092,462",25.1
+Kentucky (21),Male,2008,494,"2,106,346",23.5
+Kentucky (21),Male,2009,469,"2,123,938",22.1
+Kentucky (21),Male,2010,520,"2,134,952",24.4
+Louisiana (22),Female,2000,83,"2,306,073",3.6
+Louisiana (22),Female,2001,98,"2,308,063",4.2
+Louisiana (22),Female,2002,81,"2,315,524",3.5
+Louisiana (22),Female,2003,99,"2,327,153",4.3
+Louisiana (22),Female,2004,100,"2,338,753",4.3
+Louisiana (22),Female,2005,106,"2,349,441",4.5
+Louisiana (22),Female,2006,100,"2,204,072",4.5
+Louisiana (22),Female,2007,96,"2,239,125",4.3
+Louisiana (22),Female,2008,102,"2,269,630",4.5
+Louisiana (22),Female,2009,94,"2,295,199",4.1
+Louisiana (22),Female,2010,97,"2,314,080",4.2
+Louisiana (22),Male,2000,385,"2,162,903",17.8
+Louisiana (22),Male,2001,395,"2,169,812",18.2
+Louisiana (22),Male,2002,418,"2,181,743",19.2
+Louisiana (22),Male,2003,362,"2,193,889",16.5
+Louisiana (22),Male,2004,437,"2,213,485",19.7
+Louisiana (22),Male,2005,398,"2,227,187",17.9
+Louisiana (22),Male,2006,392,"2,098,593",18.7
+Louisiana (22),Male,2007,426,"2,136,456",19.9
+Louisiana (22),Male,2008,428,"2,165,956",19.8
+Louisiana (22),Male,2009,396,"2,196,449",18
+Louisiana (22),Male,2010,460,"2,219,292",20.7
+Maine (23),Female,2000,20,"654,614",3.1
+Maine (23),Female,2001,33,"659,657",5
+Maine (23),Female,2002,33,"664,226",5
+Maine (23),Female,2003,29,"668,680",4.3
+Maine (23),Female,2004,34,"671,862",5.1
+Maine (23),Female,2005,30,"674,104",4.5
+Maine (23),Female,2006,32,"676,157",4.7
+Maine (23),Female,2007,35,"677,797",5.2
+Maine (23),Female,2008,35,"679,413",5.2
+Maine (23),Female,2009,42,"678,694",6.2
+Maine (23),Female,2010,35,"678,305",5.2
+Maine (23),Male,2000,134,"620,309",21.6
+Maine (23),Male,2001,128,"626,035",20.4
+Maine (23),Male,2002,133,"631,734",21.1
+Maine (23),Male,2003,108,"637,833",16.9
+Maine (23),Male,2004,137,"641,826",21.3
+Maine (23),Male,2005,145,"644,683",22.5
+Maine (23),Male,2006,126,"647,462",19.5
+Maine (23),Male,2007,156,"649,243",24
+Maine (23),Male,2008,146,"651,096",22.4
+Maine (23),Male,2009,155,"650,896",23.8
+Maine (23),Male,2010,151,"650,056",23.2
+Maryland (24),Female,2000,89,"2,738,692",3.2
+Maryland (24),Female,2001,89,"2,779,864",3.2
+Maryland (24),Female,2002,94,"2,815,197",3.3
+Maryland (24),Female,2003,101,"2,843,847",3.6
+Maryland (24),Female,2004,97,"2,870,043",3.4
+Maryland (24),Female,2005,92,"2,891,761",3.2
+Maryland (24),Female,2006,97,"2,907,963",3.3
+Maryland (24),Female,2007,113,"2,920,109",3.9
+Maryland (24),Female,2008,92,"2,935,788",3.1
+Maryland (24),Female,2009,107,"2,960,001",3.6
+Maryland (24),Female,2010,95,"2,981,790",3.2
+Maryland (24),Male,2000,385,"2,557,794",15.1
+Maryland (24),Male,2001,365,"2,594,827",14.1
+Maryland (24),Male,2002,383,"2,625,192",14.6
+Maryland (24),Male,2003,390,"2,652,422",14.7
+Maryland (24),Male,2004,402,"2,676,892",15
+Maryland (24),Male,2005,380,"2,700,618",14.1
+Maryland (24),Male,2006,398,"2,719,404",14.6
+Maryland (24),Male,2007,405,"2,733,299",14.8
+Maryland (24),Male,2008,415,"2,749,177",15.1
+Maryland (24),Male,2009,444,"2,770,387",16
+Maryland (24),Male,2010,407,"2,791,762",14.6
+Massachusetts (25),Female,2000,99,"3,290,281",3
+Massachusetts (25),Female,2001,88,"3,312,567",2.7
+Massachusetts (25),Female,2002,78,"3,319,436",2.3
+Massachusetts (25),Female,2003,103,"3,320,817",3.1
+Massachusetts (25),Female,2004,82,"3,314,634",2.5
+Massachusetts (25),Female,2005,120,"3,309,010",3.6
+Massachusetts (25),Female,2006,129,"3,311,185",3.9
+Massachusetts (25),Female,2007,111,"3,321,653",3.3
+Massachusetts (25),Female,2008,115,"3,340,730",3.4
+Massachusetts (25),Female,2009,106,"3,365,859",3.1
+Massachusetts (25),Female,2010,127,"3,381,001",3.8
+Massachusetts (25),Male,2000,288,"3,058,816",9.4
+Massachusetts (25),Male,2001,338,"3,085,067",11
+Massachusetts (25),Male,2002,358,"3,097,770",11.6
+Massachusetts (25),Male,2003,330,"3,101,748",10.6
+Massachusetts (25),Male,2004,343,"3,097,647",11.1
+Massachusetts (25),Male,2005,360,"3,094,280",11.6
+Massachusetts (25),Male,2006,321,"3,098,899",10.4
+Massachusetts (25),Male,2007,405,"3,109,906",13
+Massachusetts (25),Male,2008,394,"3,128,237",12.6
+Massachusetts (25),Male,2009,423,"3,151,754",13.4
+Massachusetts (25),Male,2010,471,"3,166,628",14.9
+Michigan (26),Female,2000,187,"5,065,349",3.7
+Michigan (26),Female,2001,203,"5,089,289",4
+Michigan (26),Female,2002,208,"5,100,171",4.1
+Michigan (26),Female,2003,204,"5,110,521",4
+Michigan (26),Female,2004,223,"5,117,929",4.4
+Michigan (26),Female,2005,233,"5,114,320",4.6
+Michigan (26),Female,2006,209,"5,106,621",4.1
+Michigan (26),Female,2007,226,"5,091,035",4.4
+Michigan (26),Female,2008,221,"5,065,899",4.4
+Michigan (26),Female,2009,241,"5,044,338",4.8
+Michigan (26),Female,2010,278,"5,035,526",5.5
+Michigan (26),Male,2000,787,"4,873,095",16.1
+Michigan (26),Male,2001,848,"4,901,831",17.3
+Michigan (26),Male,2002,898,"4,915,539",18.3
+Michigan (26),Male,2003,825,"4,930,631",16.7
+Michigan (26),Male,2004,875,"4,937,386",17.7
+Michigan (26),Male,2005,875,"4,936,817",17.7
+Michigan (26),Male,2006,930,"4,929,460",18.9
+Michigan (26),Male,2007,905,"4,910,249",18.4
+Michigan (26),Male,2008,959,"4,880,990",19.6
+Michigan (26),Male,2009,928,"4,857,253",19.1
+Michigan (26),Male,2010,985,"4,848,114",20.3
+Minnesota (27),Female,2000,72,"2,483,848",2.9
+Minnesota (27),Female,2001,86,"2,514,149",3.4
+Minnesota (27),Female,2002,89,"2,531,205",3.5
+Minnesota (27),Female,2003,92,"2,546,999",3.6
+Minnesota (27),Female,2004,97,"2,564,037",3.8
+Minnesota (27),Female,2005,104,"2,579,546",4
+Minnesota (27),Female,2006,110,"2,600,951",4.2
+Minnesota (27),Female,2007,108,"2,622,551",4.1
+Minnesota (27),Female,2008,105,"2,642,672",4
+Minnesota (27),Female,2009,116,"2,659,958",4.4
+Minnesota (27),Female,2010,140,"2,671,793",5.2
+Minnesota (27),Male,2000,368,"2,435,631",15.1
+Minnesota (27),Male,2001,394,"2,468,647",16
+Minnesota (27),Male,2002,408,"2,487,730",16.4
+Minnesota (27),Male,2003,405,"2,506,573",16.2
+Minnesota (27),Male,2004,427,"2,523,676",16.9
+Minnesota (27),Male,2005,442,"2,540,052",17.4
+Minnesota (27),Male,2006,444,"2,562,604",17.3
+Minnesota (27),Male,2007,464,"2,584,652",18
+Minnesota (27),Male,2008,491,"2,604,346",18.9
+Minnesota (27),Male,2009,468,"2,621,245",17.9
+Minnesota (27),Male,2010,466,"2,632,132",17.7
+Mississippi (28),Female,2000,53,"1,471,104",3.6
+Mississippi (28),Female,2001,54,"1,473,486",3.7
+Mississippi (28),Female,2002,55,"1,475,412",3.7
+Mississippi (28),Female,2003,78,"1,479,611",5.3
+Mississippi (28),Female,2004,55,"1,490,115",3.7
+Mississippi (28),Female,2005,66,"1,497,962",4.4
+Mississippi (28),Female,2006,72,"1,496,313",4.8
+Mississippi (28),Female,2007,70,"1,507,071",4.6
+Mississippi (28),Female,2008,68,"1,516,955",4.5
+Mississippi (28),Female,2009,69,"1,522,000",4.5
+Mississippi (28),Female,2010,80,"1,526,057",5.2
+Mississippi (28),Male,2000,240,"1,373,554",17.5
+Mississippi (28),Male,2001,274,"1,379,508",19.9
+Mississippi (28),Male,2002,288,"1,383,269",20.8
+Mississippi (28),Male,2003,258,"1,388,701",18.6
+Mississippi (28),Male,2004,294,"1,398,895",21
+Mississippi (28),Male,2005,297,"1,407,981",21.1
+Mississippi (28),Male,2006,253,"1,408,665",18
+Mississippi (28),Male,2007,326,"1,421,279",22.9
+Mississippi (28),Male,2008,341,"1,430,851",23.8
+Mississippi (28),Male,2009,311,"1,436,774",21.6
+Mississippi (28),Male,2010,308,"1,441,240",21.4
+Missouri (29),Female,2000,133,"2,875,034",4.6
+Missouri (29),Female,2001,130,"2,895,476",4.5
+Missouri (29),Female,2002,115,"2,910,476",4
+Missouri (29),Female,2003,143,"2,926,556",4.9
+Missouri (29),Female,2004,153,"2,942,685",5.2
+Missouri (29),Female,2005,138,"2,962,870",4.7
+Missouri (29),Female,2006,169,"2,987,563",5.7
+Missouri (29),Female,2007,165,"3,007,493",5.5
+Missouri (29),Female,2008,166,"3,024,837",5.5
+Missouri (29),Female,2009,179,"3,042,021",5.9
+Missouri (29),Female,2010,153,"3,055,450",5
+Missouri (29),Male,2000,566,"2,720,177",20.8
+Missouri (29),Male,2001,595,"2,745,666",21.7
+Missouri (29),Male,2002,578,"2,764,349",20.9
+Missouri (29),Male,2003,536,"2,782,847",19.3
+Missouri (29),Male,2004,562,"2,805,056",20
+Missouri (29),Male,2005,589,"2,827,430",20.8
+Missouri (29),Male,2006,629,"2,855,141",22
+Missouri (29),Male,2007,643,"2,880,119",22.3
+Missouri (29),Male,2008,613,"2,899,079",21.1
+Missouri (29),Male,2009,681,"2,919,067",23.3
+Missouri (29),Male,2010,703,"2,933,477",24
+Montana (30),Female,2000,23,"452,715",5.1
+Montana (30),Female,2001,27,"454,683",5.9
+Montana (30),Female,2002,34,"456,712",7.4
+Montana (30),Female,2003,33,"460,116",7.2
+Montana (30),Female,2004,33,"465,000",7.1
+Montana (30),Female,2005,37,"469,780",7.9
+Montana (30),Female,2006,25,"475,341",5.3
+Montana (30),Female,2007,40,"480,939",8.3
+Montana (30),Female,2008,43,"486,477",8.8
+Montana (30),Female,2009,42,"490,122",8.6
+Montana (30),Female,2010,48,"492,748",9.7
+Montana (30),Male,2000,135,"449,480",30
+Montana (30),Male,2001,148,"452,278",32.7
+Montana (30),Male,2002,150,"454,955",33
+Montana (30),Male,2003,147,"459,514",32
+Montana (30),Male,2004,142,"465,009",30.5
+Montana (30),Male,2005,169,"470,322",35.9
+Montana (30),Male,2006,164,"477,351",34.4
+Montana (30),Male,2007,156,"483,767",32.2
+Montana (30),Male,2008,160,"489,938",32.7
+Montana (30),Male,2009,177,"493,860",35.8
+Montana (30),Male,2010,179,"496,667",36
+Nebraska (31),Female,2000,34,"867,912",3.9
+Nebraska (31),Female,2001,26,"871,208",3
+Nebraska (31),Female,2002,34,"874,803",3.9
+Nebraska (31),Female,2003,25,"879,362",2.8
+Nebraska (31),Female,2004,34,"883,984",3.8
+Nebraska (31),Female,2005,41,"889,468",4.6
+Nebraska (31),Female,2006,33,"894,687",3.7
+Nebraska (31),Female,2007,42,"900,106",4.7
+Nebraska (31),Female,2008,28,"905,814",3.1
+Nebraska (31),Female,2009,31,"913,619",3.4
+Nebraska (31),Female,2010,38,"920,045",4.1
+Nebraska (31),Male,2000,159,"843,351",18.9
+Nebraska (31),Male,2001,161,"848,628",19
+Nebraska (31),Male,2002,167,"853,489",19.6
+Nebraska (31),Male,2003,151,"859,281",17.6
+Nebraska (31),Male,2004,132,"865,386",15.3
+Nebraska (31),Male,2005,146,"872,029",16.7
+Nebraska (31),Male,2006,169,"878,006",19.2
+Nebraska (31),Male,2007,139,"883,334",15.7
+Nebraska (31),Male,2008,163,"890,564",18.3
+Nebraska (31),Male,2009,139,"899,064",15.5
+Nebraska (31),Male,2010,155,"906,296",17.1
+Nevada (32),Female,2000,69,"980,206",7
+Nevada (32),Female,2001,84,"1,030,850",8.1
+Nevada (32),Female,2002,90,"1,069,764",8.4
+Nevada (32),Female,2003,85,"1,108,135",7.7
+Nevada (32),Female,2004,98,"1,156,586",8.5
+Nevada (32),Female,2005,101,"1,198,846",8.4
+Nevada (32),Female,2006,108,"1,243,993",8.7
+Nevada (32),Female,2007,102,"1,284,052",7.9
+Nevada (32),Female,2008,110,"1,310,601",8.4
+Nevada (32),Female,2009,117,"1,327,618",8.8
+Nevada (32),Female,2010,124,"1,336,935",9.3
+Nevada (32),Male,2000,330,"1,018,051",32.4
+Nevada (32),Male,2001,302,"1,067,549",28.3
+Nevada (32),Male,2002,333,"1,104,027",30.2
+Nevada (32),Male,2003,348,"1,140,715",30.5
+Nevada (32),Male,2004,342,"1,189,636",28.7
+Nevada (32),Male,2005,377,"1,233,297",30.6
+Nevada (32),Male,2006,378,"1,278,665",29.6
+Nevada (32),Male,2007,369,"1,317,020",28
+Nevada (32),Male,2008,418,"1,343,029",31.1
+Nevada (32),Male,2009,388,"1,357,047",28.6
+Nevada (32),Male,2010,423,"1,363,616",31
+New Hampshire (33),Female,2000,27,"628,099",4.3
+New Hampshire (33),Female,2001,35,"637,412",5.5
+New Hampshire (33),Female,2002,23,"643,680",3.6
+New Hampshire (33),Female,2003,31,"648,513",4.8
+New Hampshire (33),Female,2004,29,"653,845",4.4
+New Hampshire (33),Female,2005,29,"657,932",4.4
+New Hampshire (33),Female,2006,40,"662,773",6
+New Hampshire (33),Female,2007,35,"664,987",5.3
+New Hampshire (33),Female,2008,40,"666,576",6
+New Hampshire (33),Female,2009,32,"666,875",4.8
+New Hampshire (33),Female,2010,40,"667,076",6
+New Hampshire (33),Male,2000,104,"607,687",17.1
+New Hampshire (33),Male,2001,132,"618,105",21.4
+New Hampshire (33),Male,2002,109,"625,409",17.4
+New Hampshire (33),Male,2003,127,"631,327",20.1
+New Hampshire (33),Male,2004,104,"636,276",16.3
+New Hampshire (33),Male,2005,133,"640,560",20.8
+New Hampshire (33),Male,2006,111,"645,616",17.2
+New Hampshire (33),Male,2007,123,"647,553",19
+New Hampshire (33),Male,2008,139,"649,330",21.4
+New Hampshire (33),Male,2009,134,"649,227",20.6
+New Hampshire (33),Male,2010,156,"649,394",24
+New Jersey (34),Female,2000,116,"4,331,537",2.7
+New Jersey (34),Female,2001,133,"4,369,932",3
+New Jersey (34),Female,2002,111,"4,398,801",2.5
+New Jersey (34),Female,2003,117,"4,421,964",2.6
+New Jersey (34),Female,2004,115,"4,436,964",2.6
+New Jersey (34),Female,2005,114,"4,443,545",2.6
+New Jersey (34),Female,2006,115,"4,448,099",2.6
+New Jersey (34),Female,2007,124,"4,455,148",2.8
+New Jersey (34),Female,2008,117,"4,469,901",2.6
+New Jersey (34),Female,2009,79,"4,493,506",1.8
+New Jersey (34),Female,2010,149,"4,512,294",3.3
+New Jersey (34),Male,2000,444,"4,082,813",10.9
+New Jersey (34),Male,2001,455,"4,122,739",11
+New Jersey (34),Male,2002,441,"4,153,842",10.6
+New Jersey (34),Male,2003,471,"4,179,438",11.3
+New Jersey (34),Male,2004,482,"4,197,597",11.5
+New Jersey (34),Male,2005,422,"4,208,429",10
+New Jersey (34),Male,2006,469,"4,213,580",11.1
+New Jersey (34),Male,2007,472,"4,222,737",11.2
+New Jersey (34),Male,2008,498,"4,241,189",11.7
+New Jersey (34),Male,2009,478,"4,262,096",11.2
+New Jersey (34),Male,2010,569,"4,279,600",13.3
+New Mexico (35),Female,2000,65,"924,729",7
+New Mexico (35),Female,2001,79,"930,387",8.5
+New Mexico (35),Female,2002,63,"941,856",6.7
+New Mexico (35),Female,2003,54,"952,303",5.7
+New Mexico (35),Female,2004,65,"964,738",6.7
+New Mexico (35),Female,2005,67,"978,520",6.8
+New Mexico (35),Female,2006,67,"993,969",6.7
+New Mexico (35),Female,2007,75,"1,007,922",7.4
+New Mexico (35),Female,2008,104,"1,018,578",10.2
+New Mexico (35),Female,2009,84,"1,031,238",8.1
+New Mexico (35),Female,2010,102,"1,041,758",9.8
+New Mexico (35),Male,2000,260,"894,317",29.1
+New Mexico (35),Male,2001,282,"901,303",31.3
+New Mexico (35),Male,2002,286,"913,453",31.3
+New Mexico (35),Male,2003,289,"925,271",31.2
+New Mexico (35),Male,2004,290,"939,070",30.9
+New Mexico (35),Male,2005,275,"953,754",28.8
+New Mexico (35),Male,2006,285,"968,168",29.4
+New Mexico (35),Male,2007,326,"982,148",33.2
+New Mexico (35),Male,2008,315,"992,084",31.8
+New Mexico (35),Male,2009,292,"1,005,564",29
+New Mexico (35),Male,2010,311,"1,017,421",30.6
+New York (36),Female,2000,198,"9,829,709",2
+New York (36),Female,2001,245,"9,878,713",2.5
+New York (36),Female,2002,239,"9,902,927",2.4
+New York (36),Female,2003,241,"9,917,810",2.4
+New York (36),Female,2004,215,"9,913,527",2.2
+New York (36),Female,2005,219,"9,887,467",2.2
+New York (36),Female,2006,253,"9,871,401",2.6
+New York (36),Female,2007,331,"9,881,510",3.3
+New York (36),Female,2008,322,"9,918,841",3.2
+New York (36),Female,2009,298,"9,966,620",3
+New York (36),Female,2010,315,"10,000,955",3.1
+New York (36),Male,2000,934,"9,146,748",10.2
+New York (36),Male,2001,"1,008","9,204,125",11
+New York (36),Male,2002,989,"9,234,873",10.7
+New York (36),Male,2003,928,"9,258,129",10
+New York (36),Male,2004,972,"9,258,040",10.5
+New York (36),Male,2005,970,"9,245,143",10.5
+New York (36),Male,2006,"1,073","9,233,230",11.6
+New York (36),Male,2007,"1,065","9,250,825",11.5
+New York (36),Male,2008,"1,087","9,293,595",11.7
+New York (36),Male,2009,"1,117","9,340,446",12
+New York (36),Male,2010,"1,232","9,377,147",13.1
+North Carolina (37),Female,2000,224,"4,106,618",5.5
+North Carolina (37),Female,2001,202,"4,187,317",4.8
+North Carolina (37),Female,2002,195,"4,250,179",4.6
+North Carolina (37),Female,2003,195,"4,313,901",4.5
+North Carolina (37),Female,2004,231,"4,376,070",5.3
+North Carolina (37),Female,2005,242,"4,457,189",5.4
+North Carolina (37),Female,2006,252,"4,563,152",5.5
+North Carolina (37),Female,2007,258,"4,677,313",5.5
+North Carolina (37),Female,2008,269,"4,771,376",5.6
+North Carolina (37),Female,2009,240,"4,846,501",5
+North Carolina (37),Female,2010,266,"4,889,991",5.4
+North Carolina (37),Male,2000,747,"3,942,695",18.9
+North Carolina (37),Male,2001,793,"4,022,805",19.7
+North Carolina (37),Male,2002,791,"4,076,022",19.4
+North Carolina (37),Male,2003,760,"4,108,600",18.5
+North Carolina (37),Male,2004,795,"4,177,082",19
+North Carolina (37),Male,2005,767,"4,248,218",18.1
+North Carolina (37),Male,2006,852,"4,354,118",19.6
+North Carolina (37),Male,2007,819,"4,440,724",18.4
+North Carolina (37),Male,2008,892,"4,538,073",19.7
+North Carolina (37),Male,2009,934,"4,603,065",20.3
+North Carolina (37),Male,2010,908,"4,645,492",19.5
+North Dakota (38),Female,2001,18,"319,787",Unreliable
+North Dakota (38),Female,2002,14,"319,017",Unreliable
+North Dakota (38),Female,2003,15,"318,896",Unreliable
+North Dakota (38),Female,2004,10,"321,008",Unreliable
+North Dakota (38),Female,2006,17,"322,583",Unreliable
+North Dakota (38),Female,2008,14,"326,131",Unreliable
+North Dakota (38),Female,2009,12,"329,674",Unreliable
+North Dakota (38),Female,2010,17,"332,727",Unreliable
+North Dakota (38),Male,2000,59,"320,524",18.4
+North Dakota (38),Male,2001,61,"319,275",19.1
+North Dakota (38),Male,2002,77,"319,151",24.1
+North Dakota (38),Male,2003,66,"319,921",20.6
+North Dakota (38),Male,2004,63,"323,697",19.5
+North Dakota (38),Male,2005,86,"324,546",26.5
+North Dakota (38),Male,2006,73,"326,839",22.3
+North Dakota (38),Male,2007,87,"328,756",26.5
+North Dakota (38),Male,2008,72,"331,438",21.7
+North Dakota (38),Male,2009,78,"335,294",23.3
+North Dakota (38),Male,2010,89,"339,864",26.2
+Ohio (39),Female,2000,191,"5,840,878",3.3
+Ohio (39),Female,2001,215,"5,853,691",3.7
+Ohio (39),Female,2002,257,"5,859,385",4.4
+Ohio (39),Female,2003,189,"5,868,535",3.2
+Ohio (39),Female,2004,283,"5,874,411",4.8
+Ohio (39),Female,2005,240,"5,876,703",4.1
+Ohio (39),Female,2006,284,"5,883,067",4.8
+Ohio (39),Female,2007,232,"5,890,965",3.9
+Ohio (39),Female,2008,288,"5,896,594",4.9
+Ohio (39),Female,2009,236,"5,902,018",4
+Ohio (39),Female,2010,294,"5,904,348",5
+Ohio (39),Male,2000,897,"5,512,262",16.3
+Ohio (39),Male,2001,"1,004","5,533,713",18.1
+Ohio (39),Male,2002,"1,030","5,548,504",18.6
+Ohio (39),Male,2003,885,"5,566,253",15.9
+Ohio (39),Male,2004,"1,036","5,577,840",18.6
+Ohio (39),Male,2005,"1,101","5,586,617",19.7
+Ohio (39),Male,2006,"1,041","5,598,146",18.6
+Ohio (39),Male,2007,"1,063","5,609,503",18.9
+Ohio (39),Male,2008,"1,124","5,618,797",20
+Ohio (39),Male,2009,940,"5,626,878",16.7
+Ohio (39),Male,2010,"1,145","5,632,156",20.3
+Oklahoma (40),Female,2000,103,"1,754,759",5.9
+Oklahoma (40),Female,2001,91,"1,760,052",5.2
+Oklahoma (40),Female,2002,104,"1,769,080",5.9
+Oklahoma (40),Female,2003,78,"1,777,723",4.4
+Oklahoma (40),Female,2004,111,"1,784,671",6.2
+Oklahoma (40),Female,2005,118,"1,796,475",6.6
+Oklahoma (40),Female,2006,111,"1,818,693",6.1
+Oklahoma (40),Female,2007,125,"1,837,175",6.8
+Oklahoma (40),Female,2008,109,"1,854,771",5.9
+Oklahoma (40),Female,2009,111,"1,878,034",5.9
+Oklahoma (40),Female,2010,118,"1,894,374",6.2
+Oklahoma (40),Male,2000,394,"1,695,895",23.2
+Oklahoma (40),Male,2001,423,"1,707,048",24.8
+Oklahoma (40),Male,2002,397,"1,720,000",23.1
+Oklahoma (40),Male,2003,398,"1,727,169",23
+Oklahoma (40),Male,2004,395,"1,740,562",22.7
+Oklahoma (40),Male,2005,404,"1,752,122",23.1
+Oklahoma (40),Male,2006,426,"1,775,397",24
+Oklahoma (40),Male,2007,406,"1,797,174",22.6
+Oklahoma (40),Male,2008,466,"1,814,205",25.7
+Oklahoma (40),Male,2009,456,"1,839,538",24.8
+Oklahoma (40),Male,2010,500,"1,856,977",26.9
+Oregon (41),Female,2000,113,"1,724,849",6.6
+Oregon (41),Female,2001,104,"1,747,889",6
+Oregon (41),Female,2002,85,"1,771,126",4.8
+Oregon (41),Female,2003,112,"1,788,805",6.3
+Oregon (41),Female,2004,140,"1,800,377",7.8
+Oregon (41),Female,2005,117,"1,823,447",6.4
+Oregon (41),Female,2006,137,"1,853,117",7.4
+Oregon (41),Female,2007,128,"1,879,347",6.8
+Oregon (41),Female,2008,119,"1,903,535",6.3
+Oregon (41),Female,2009,157,"1,923,209",8.2
+Oregon (41),Female,2010,150,"1,935,072",7.8
+Oregon (41),Male,2000,380,"1,696,550",22.4
+Oregon (41),Male,2001,401,"1,720,048",23.3
+Oregon (41),Male,2002,433,"1,742,298",24.9
+Oregon (41),Male,2003,480,"1,758,571",27.3
+Oregon (41),Male,2004,415,"1,769,086",23.5
+Oregon (41),Male,2005,443,"1,789,755",24.8
+Oregon (41),Male,2006,442,"1,817,766",24.3
+Oregon (41),Male,2007,466,"1,843,070",25.3
+Oregon (41),Male,2008,453,"1,865,213",24.3
+Oregon (41),Male,2009,487,"1,885,391",25.8
+Oregon (41),Male,2010,535,"1,896,002",28.2
+Pennsylvania (42),Female,2000,241,"6,351,391",3.8
+Pennsylvania (42),Female,2001,225,"6,354,395",3.5
+Pennsylvania (42),Female,2002,235,"6,363,832",3.7
+Pennsylvania (42),Female,2003,245,"6,377,894",3.8
+Pennsylvania (42),Female,2004,280,"6,390,749",4.4
+Pennsylvania (42),Female,2005,272,"6,405,053",4.2
+Pennsylvania (42),Female,2006,243,"6,429,312",3.8
+Pennsylvania (42),Female,2007,253,"6,452,087",3.9
+Pennsylvania (42),Female,2008,276,"6,473,295",4.3
+Pennsylvania (42),Female,2009,342,"6,497,024",5.3
+Pennsylvania (42),Female,2010,326,"6,512,016",5
+Pennsylvania (42),Male,2000,"1,114","5,929,663",18.8
+Pennsylvania (42),Male,2001,"1,046","5,944,575",17.6
+Pennsylvania (42),Male,2002,"1,106","5,967,199",18.5
+Pennsylvania (42),Male,2003,"1,095","5,996,764",18.3
+Pennsylvania (42),Male,2004,"1,130","6,019,973",18.8
+Pennsylvania (42),Male,2005,"1,158","6,044,937",19.2
+Pennsylvania (42),Male,2006,"1,153","6,081,497",19
+Pennsylvania (42),Male,2007,"1,187","6,111,850",19.4
+Pennsylvania (42),Male,2008,"1,263","6,138,990",20.6
+Pennsylvania (42),Male,2009,"1,289","6,169,834",20.9
+Pennsylvania (42),Male,2010,"1,250","6,190,363",20.2
+Rhode Island (44),Female,2000,14,"544,684",Unreliable
+Rhode Island (44),Female,2001,22,"548,974",4
+Rhode Island (44),Female,2002,20,"553,090",3.6
+Rhode Island (44),Female,2003,15,"555,590",Unreliable
+Rhode Island (44),Female,2004,15,"556,375",Unreliable
+Rhode Island (44),Female,2005,21,"552,832",3.8
+Rhode Island (44),Female,2006,15,"550,134",Unreliable
+Rhode Island (44),Female,2007,20,"546,859",3.7
+Rhode Island (44),Female,2008,32,"545,412",5.9
+Rhode Island (44),Female,2009,22,"544,764",4
+Rhode Island (44),Female,2010,19,"544,167",Unreliable
+Rhode Island (44),Male,2000,61,"503,635",12.1
+Rhode Island (44),Male,2001,65,"508,168",12.8
+Rhode Island (44),Male,2002,66,"512,905",12.9
+Rhode Island (44),Male,2003,69,"515,752",13.4
+Rhode Island (44),Male,2004,70,"518,204",13.5
+Rhode Island (44),Male,2005,50,"515,084",9.7
+Rhode Island (44),Male,2006,75,"512,962",14.6
+Rhode Island (44),Male,2007,76,"510,456",14.9
+Rhode Island (44),Male,2008,78,"509,591",15.3
+Rhode Island (44),Male,2009,96,"508,882",18.9
+Rhode Island (44),Male,2010,110,"508,400",21.6
+South Carolina (45),Female,2000,103,"2,063,083",5
+South Carolina (45),Female,2001,110,"2,089,963",5.3
+South Carolina (45),Female,2002,75,"2,111,069",3.6
+South Carolina (45),Female,2003,99,"2,133,967",4.6
+South Carolina (45),Female,2004,91,"2,162,305",4.2
+South Carolina (45),Female,2005,107,"2,192,345",4.9
+South Carolina (45),Female,2006,119,"2,237,655",5.3
+South Carolina (45),Female,2007,132,"2,280,792",5.8
+South Carolina (45),Female,2008,111,"2,325,047",4.8
+South Carolina (45),Female,2009,131,"2,357,030",5.6
+South Carolina (45),Female,2010,151,"2,375,263",6.4
+South Carolina (45),Male,2000,340,"1,948,929",17.4
+South Carolina (45),Male,2001,357,"1,975,032",18.1
+South Carolina (45),Male,2002,365,"1,996,726",18.3
+South Carolina (45),Male,2003,377,"2,016,330",18.7
+South Carolina (45),Male,2004,391,"2,048,616",19.1
+South Carolina (45),Male,2005,403,"2,077,805",19.4
+South Carolina (45),Male,2006,405,"2,120,192",19.1
+South Carolina (45),Male,2007,397,"2,163,318",18.4
+South Carolina (45),Male,2008,454,"2,203,949",20.6
+South Carolina (45),Male,2009,488,"2,232,842",21.9
+South Carolina (45),Male,2010,486,"2,250,101",21.6
+South Dakota (46),Female,2000,12,"380,286",Unreliable
+South Dakota (46),Female,2001,17,"381,537",Unreliable
+South Dakota (46),Female,2002,18,"382,328",Unreliable
+South Dakota (46),Female,2003,19,"383,633",Unreliable
+South Dakota (46),Female,2004,18,"386,677",Unreliable
+South Dakota (46),Female,2005,17,"389,021",Unreliable
+South Dakota (46),Female,2006,21,"392,420",5.4
+South Dakota (46),Female,2007,26,"396,650",6.6
+South Dakota (46),Female,2008,23,"400,236",5.7
+South Dakota (46),Female,2009,21,"403,198",5.2
+South Dakota (46),Female,2010,38,"406,799",9.3
+South Dakota (46),Male,2000,83,"374,558",22.2
+South Dakota (46),Male,2001,88,"376,435",23.4
+South Dakota (46),Male,2002,76,"377,692",20.1
+South Dakota (46),Male,2003,83,"380,096",21.8
+South Dakota (46),Male,2004,94,"383,719",24.5
+South Dakota (46),Male,2005,104,"386,472",26.9
+South Dakota (46),Male,2006,104,"390,613",26.6
+South Dakota (46),Male,2007,76,"394,973",19.2
+South Dakota (46),Male,2008,101,"398,888",25.3
+South Dakota (46),Male,2009,108,"403,869",26.7
+South Dakota (46),Male,2010,102,"407,381",25
+Tennessee (47),Female,2000,146,"2,919,008",5
+Tennessee (47),Female,2001,133,"2,948,421",4.5
+Tennessee (47),Female,2002,166,"2,971,873",5.6
+Tennessee (47),Female,2003,165,"3,000,983",5.5
+Tennessee (47),Female,2004,165,"3,027,931",5.4
+Tennessee (47),Female,2005,159,"3,068,439",5.2
+Tennessee (47),Female,2006,195,"3,121,455",6.2
+Tennessee (47),Female,2007,201,"3,162,280",6.4
+Tennessee (47),Female,2008,223,"3,203,115",7
+Tennessee (47),Female,2009,199,"3,231,769",6.2
+Tennessee (47),Female,2010,215,"3,252,601",6.6
+Tennessee (47),Male,2000,584,"2,770,275",21.1
+Tennessee (47),Male,2001,578,"2,802,368",20.6
+Tennessee (47),Male,2002,611,"2,824,045",21.6
+Tennessee (47),Male,2003,597,"2,846,829",21
+Tennessee (47),Male,2004,627,"2,882,878",21.7
+Tennessee (47),Male,2005,697,"2,922,618",23.8
+Tennessee (47),Male,2006,679,"2,967,311",22.9
+Tennessee (47),Male,2007,643,"3,013,447",21.3
+Tennessee (47),Male,2008,750,"3,044,296",24.6
+Tennessee (47),Male,2009,747,"3,074,250",24.3
+Tennessee (47),Male,2010,728,"3,093,504",23.5
+Texas (48),Female,2000,406,"10,498,910",3.9
+Texas (48),Female,2001,444,"10,731,190",4.1
+Texas (48),Female,2002,505,"10,914,653",4.6
+Texas (48),Female,2003,509,"11,095,953",4.6
+Texas (48),Female,2004,497,"11,278,402",4.4
+Texas (48),Female,2005,494,"11,470,439",4.3
+Texas (48),Female,2006,500,"11,771,243",4.2
+Texas (48),Female,2007,501,"12,010,572",4.2
+Texas (48),Female,2008,500,"12,249,936",4.1
+Texas (48),Female,2009,572,"12,500,150",4.6
+Texas (48),Female,2010,591,"12,673,281",4.7
+Texas (48),Male,2000,"1,647","10,352,910",15.9
+Texas (48),Male,2001,"1,780","10,588,432",16.8
+Texas (48),Male,2002,"1,803","10,775,672",16.7
+Texas (48),Male,2003,"1,853","10,934,978",16.9
+Texas (48),Male,2004,"1,802","11,115,621",16.2
+Texas (48),Male,2005,"1,924","11,307,684",17
+Texas (48),Male,2006,"1,847","11,588,337",15.9
+Texas (48),Male,2007,"1,932","11,821,411",16.3
+Texas (48),Male,2008,"2,052","12,059,103",17
+Texas (48),Male,2009,"2,235","12,301,611",18.2
+Texas (48),Male,2010,"2,298","12,472,280",18.4
+Utah (49),Female,2000,73,"1,114,138",6.6
+Utah (49),Female,2001,56,"1,139,182",4.9
+Utah (49),Female,2002,77,"1,158,853",6.6
+Utah (49),Female,2003,55,"1,175,867",4.7
+Utah (49),Female,2004,67,"1,196,749",5.6
+Utah (49),Female,2005,62,"1,224,741",5.1
+Utah (49),Female,2006,82,"1,257,991",6.5
+Utah (49),Female,2007,76,"1,292,672",5.9
+Utah (49),Female,2008,73,"1,325,631",5.5
+Utah (49),Female,2009,98,"1,355,509",7.2
+Utah (49),Female,2010,98,"1,375,568",7.1
+Utah (49),Male,2000,225,"1,119,031",20.1
+Utah (49),Male,2001,265,"1,144,533",23.2
+Utah (49),Male,2002,263,"1,165,962",22.6
+Utah (49),Male,2003,281,"1,184,270",23.7
+Utah (49),Male,2004,310,"1,204,831",25.7
+Utah (49),Male,2005,286,"1,232,978",23.2
+Utah (49),Male,2006,280,"1,267,516",22.1
+Utah (49),Male,2007,302,"1,305,074",23.1
+Utah (49),Male,2008,317,"1,337,398",23.7
+Utah (49),Male,2009,351,"1,367,912",25.7
+Utah (49),Male,2010,375,"1,388,317",27
+Vermont (50),Female,2001,13,"311,779",Unreliable
+Vermont (50),Female,2002,15,"312,959",Unreliable
+Vermont (50),Female,2003,14,"314,206",Unreliable
+Vermont (50),Female,2004,16,"315,080",Unreliable
+Vermont (50),Female,2005,18,"315,422",Unreliable
+Vermont (50),Female,2006,20,"316,290",6.3
+Vermont (50),Female,2007,19,"316,538",Unreliable
+Vermont (50),Female,2008,22,"316,722",6.9
+Vermont (50),Female,2009,18,"317,128",Unreliable
+Vermont (50),Female,2010,20,"317,535",6.3
+Vermont (50),Male,2000,68,"298,337",22.8
+Vermont (50),Male,2001,59,"300,444",19.6
+Vermont (50),Male,2002,77,"302,483",25.5
+Vermont (50),Male,2003,69,"303,652",22.7
+Vermont (50),Male,2004,77,"304,840",25.3
+Vermont (50),Male,2005,60,"305,793",19.6
+Vermont (50),Male,2006,61,"306,602",19.9
+Vermont (50),Male,2007,70,"306,943",22.8
+Vermont (50),Male,2008,72,"307,429",23.4
+Vermont (50),Male,2009,69,"307,689",22.4
+Vermont (50),Male,2010,86,"308,206",27.9
+Virginia (51),Female,2000,167,"3,606,620",4.6
+Virginia (51),Female,2001,176,"3,665,386",4.8
+Virginia (51),Female,2002,175,"3,713,695",4.7
+Virginia (51),Female,2003,177,"3,757,780",4.7
+Virginia (51),Female,2004,171,"3,814,310",4.5
+Virginia (51),Female,2005,185,"3,863,646",4.8
+Virginia (51),Female,2006,206,"3,908,475",5.3
+Virginia (51),Female,2007,229,"3,947,966",5.8
+Virginia (51),Female,2008,204,"3,988,983",5.1
+Virginia (51),Female,2009,217,"4,037,895",5.4
+Virginia (51),Female,2010,191,"4,075,041",4.7
+Virginia (51),Male,2000,601,"3,471,895",17.3
+Virginia (51),Male,2001,621,"3,532,976",17.6
+Virginia (51),Male,2002,624,"3,573,178",17.5
+Virginia (51),Male,2003,631,"3,609,197",17.5
+Virginia (51),Male,2004,656,"3,661,265",17.9
+Virginia (51),Male,2005,681,"3,713,459",18.3
+Virginia (51),Male,2006,670,"3,765,250",17.8
+Virginia (51),Male,2007,651,"3,803,034",17.1
+Virginia (51),Male,2008,744,"3,844,513",19.4
+Virginia (51),Male,2009,746,"3,888,042",19.2
+Virginia (51),Male,2010,772,"3,925,983",19.7
+Washington (53),Female,2000,140,"2,959,821",4.7
+Washington (53),Female,2001,142,"3,002,080",4.7
+Washington (53),Female,2002,169,"3,036,742",5.6
+Washington (53),Female,2003,161,"3,065,739",5.3
+Washington (53),Female,2004,191,"3,107,815",6.1
+Washington (53),Female,2005,166,"3,145,396",5.3
+Washington (53),Female,2006,177,"3,200,695",5.5
+Washington (53),Female,2007,190,"3,247,800",5.9
+Washington (53),Female,2008,189,"3,293,162",5.7
+Washington (53),Female,2009,204,"3,343,920",6.1
+Washington (53),Female,2010,218,"3,374,833",6.5
+Washington (53),Male,2000,587,"2,934,300",20
+Washington (53),Male,2001,570,"2,983,642",19.1
+Washington (53),Male,2002,642,"3,015,607",21.3
+Washington (53),Male,2003,642,"3,038,376",21.1
+Washington (53),Male,2004,639,"3,070,830",20.8
+Washington (53),Male,2005,656,"3,111,909",21.1
+Washington (53),Male,2006,632,"3,170,058",19.9
+Washington (53),Male,2007,675,"3,213,787",21
+Washington (53),Male,2008,700,"3,269,069",21.4
+Washington (53),Male,2009,717,"3,323,506",21.6
+Washington (53),Male,2010,739,"3,349,707",22.1
+West Virginia (54),Female,2000,51,"929,174",5.5
+West Virginia (54),Female,2001,46,"923,643",5
+West Virginia (54),Female,2002,41,"923,841",4.4
+West Virginia (54),Female,2003,40,"925,835",4.3
+West Virginia (54),Female,2004,49,"927,027",5.3
+West Virginia (54),Female,2005,44,"927,690",4.7
+West Virginia (54),Female,2006,54,"930,605",5.8
+West Virginia (54),Female,2007,46,"932,683",4.9
+West Virginia (54),Female,2008,56,"934,911",6
+West Virginia (54),Female,2009,41,"937,434",4.4
+West Virginia (54),Female,2010,40,"939,408",4.3
+West Virginia (54),Male,2000,194,"879,170",22.1
+West Virginia (54),Male,2001,240,"877,838",27.3
+West Virginia (54),Male,2002,235,"881,573",26.7
+West Virginia (54),Male,2003,226,"886,460",25.5
+West Virginia (54),Male,2004,236,"889,411",26.5
+West Virginia (54),Male,2005,211,"892,802",23.6
+West Virginia (54),Male,2006,215,"897,307",24
+West Virginia (54),Male,2007,254,"901,369",28.2
+West Virginia (54),Male,2008,205,"905,399",22.6
+West Virginia (54),Male,2009,212,"910,341",23.3
+West Virginia (54),Male,2010,239,"913,586",26.2
+Wisconsin (55),Female,2000,119,"2,714,634",4.4
+Wisconsin (55),Female,2001,116,"2,733,647",4.2
+Wisconsin (55),Female,2002,115,"2,751,697",4.2
+Wisconsin (55),Female,2003,109,"2,766,901",3.9
+Wisconsin (55),Female,2004,155,"2,782,678",5.6
+Wisconsin (55),Female,2005,121,"2,797,061",4.3
+Wisconsin (55),Female,2006,144,"2,812,276",5.1
+Wisconsin (55),Female,2007,148,"2,827,782",5.2
+Wisconsin (55),Female,2008,158,"2,842,268",5.6
+Wisconsin (55),Female,2009,165,"2,856,103",5.8
+Wisconsin (55),Female,2010,160,"2,864,586",5.6
+Wisconsin (55),Male,2000,471,"2,649,041",17.8
+Wisconsin (55),Male,2001,522,"2,673,188",19.5
+Wisconsin (55),Male,2002,512,"2,693,465",19
+Wisconsin (55),Male,2003,538,"2,712,302",19.8
+Wisconsin (55),Male,2004,507,"2,731,348",18.6
+Wisconsin (55),Male,2005,522,"2,749,105",19
+Wisconsin (55),Male,2006,526,"2,765,379",19
+Wisconsin (55),Male,2007,581,"2,782,993",20.9
+Wisconsin (55),Male,2008,585,"2,798,728",20.9
+Wisconsin (55),Male,2009,559,"2,813,161",19.9
+Wisconsin (55),Male,2010,633,"2,822,400",22.4
+Wyoming (56),Female,2000,15,"245,408",Unreliable
+Wyoming (56),Female,2001,11,"245,327",Unreliable
+Wyoming (56),Female,2002,18,"247,785",Unreliable
+Wyoming (56),Female,2003,16,"249,128",Unreliable
+Wyoming (56),Female,2004,21,"251,506",8.3
+Wyoming (56),Female,2005,23,"253,726",9.1
+Wyoming (56),Female,2006,23,"257,361",8.9
+Wyoming (56),Female,2007,18,"262,776",Unreliable
+Wyoming (56),Female,2008,21,"267,982",7.8
+Wyoming (56),Female,2009,20,"274,046",7.3
+Wyoming (56),Female,2010,25,"276,189",9.1
+Wyoming (56),Male,2000,68,"248,374",27.4
+Wyoming (56),Male,2001,72,"249,330",28.9
+Wyoming (56),Male,2002,87,"252,232",34.5
+Wyoming (56),Male,2003,93,"254,325",36.6
+Wyoming (56),Male,2004,67,"257,600",26
+Wyoming (56),Male,2005,67,"260,431",25.7
+Wyoming (56),Male,2006,93,"265,306",35.1
+Wyoming (56),Male,2007,83,"272,100",30.5
+Wyoming (56),Male,2008,103,"278,061",37
+Wyoming (56),Male,2009,91,"285,805",31.8
+Wyoming (56),Male,2010,106,"287,437",36.9
