@@ -20,6 +20,8 @@ shinyUI(tagList(
              # Claire's Panel
              tabPanel(
                "About Suicide",
+               
+               includeCSS("style.css"),
                tabsetPanel(
                  #tab1 introduction
                  tabPanel(
@@ -38,12 +40,12 @@ shinyUI(tagList(
              # Carol's Panel
              tabPanel(
                "Worldwide Statistics",
-               titlePanel(tags$div(tags$h1(class = "mapTitle",
+               titlePanel(tags$div(tags$h1(class = "Title",
                                            "External Factors"))),
                sidebarLayout(
                  
                  sidebarPanel(
-                   selectInput('external factors', 
+                   selectInput('external_factors', 
                                 label = h3('Choose an possible external factor'),
                   choices = list(
                     'GDP' = 'GDP',
@@ -53,7 +55,7 @@ shinyUI(tagList(
                   width = '200px'
                  ),
                  tags$br(),
-                 tags$h3(class = "tabSix", "Description"),
+                 tags$h3("Description"),
                  tags$h5(class = "context",
                          "With this interactive bar chart, you can explore the
                          dataset within different time periods. In the specific

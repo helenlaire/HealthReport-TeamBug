@@ -1,0 +1,55 @@
+.Title {
+  font-family: Helvetica;
+  text-align: center;
+  font-style: bold;
+  color:lightskyblue;
+  font-variant: small-caps;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+h2 {
+  font-family: Helvetica;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h3 {
+  font-family: Helvetica;
+  color: lightskyblue;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h4 {
+  font-style: italic
+}
+
+h6 {
+  font-family: Helvetica;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.context {
+    font-family: Optima, sans-serif;
+    font-size: 15px;
+    text-shadow:
+      -0.5px -0.5px 0 #000,
+      0.5px -0.5px 0 #000,
+      -0.5px 0.5px 0 #000,
+      0.5px 0.5px 0 #000;
+  }

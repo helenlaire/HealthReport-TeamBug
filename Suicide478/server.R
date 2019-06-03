@@ -9,6 +9,7 @@
 
 library(shiny)
 source("../External_Factors/carol_analysis.R")
+external <- read.csv(file = "../External_Factors/data/prepare_data.csv")
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
@@ -25,7 +26,7 @@ shinyServer(function(input, output) {
   
   ## Carol's Code
   output$external_plot <- renderPlot({
-    return(create_plot(all_data, input$`external factors`))
+    return(create_plot(external, input$external_factors))
   })
   
   
