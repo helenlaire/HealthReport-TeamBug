@@ -20,8 +20,29 @@ all_data <- join(all_data, unemployment, type = 'left', by = 'country')
 gdp <- suicide %>% select(country, gdp_per_capita...., year) %>% distinct() %>% group_by(country) %>% 
   summarise(gdp = round(mean(gdp_per_capita...., na.rm = T), 0))
 all_data <- join(all_data, gdp, type = 'left', by = 'country')
-ggplot(all_data, aes(x=suicide_rate, y=health_spend)) + 
-  geom_point()+
-  geom_smooth(method=lm, se=FALSE)
+
+
+create_plot <- function(df, select){
+  if(select == 'GDP'){
+    p <- ggplot(df, aes(x=suicide_rate, y=gdp)) + 
+      geom_point(size = 2)+
+      geom_smooth(method=lm)+
+      labs(title = 'The relationship between GDP and Suicide Rate', x = 'Suicide Rate',
+           y = 'GDP Per Capita')
+  } else if(select == 'Health'){
+    p <- ggplot(df, aes(x=suicide_rate, y=health_spend)) + 
+      geom_point(size = 2)+
+      geom_smooth(method=lm)+
+      labs(title = 'The relationship between Health Expenditure and Suicide Rate', x = 'Suicide Rate',
+           y = 'Health Expenditure')
+  } else if(select == 'Unemployment'){
+    p <- ggplot(df, aes(x=suicide_rate, y=unemployment)) + 
+      geom_point(size = 2)+
+      geom_smooth(method=lm)+
+      labs(title = 'The relationship between Unemployment Rate and Suicide Rate', x = 'Suicide Rate',
+           y = 'Unemployment Rate')
+  }
+  return(p)
+}
   
 
