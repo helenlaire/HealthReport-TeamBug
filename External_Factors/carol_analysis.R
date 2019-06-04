@@ -43,7 +43,10 @@ create_text <- function(select){
     with higher health expenditure. Therefore, health expenditure is not a determinant external factor to 
     the suicide rates.'
   }else if(select == 'Unemployment'){
-    text <- 'c'
+    text <- 'According to the visual output, we can tell the distribution of the unemployment rate 
+    and suicide rate are pretty random and distributed. We can not observe any obvious relation between 
+    these two variables which means the unemployment rate is not an external factor related to the suicide 
+    rates.'
   }
   return(text)
 }
