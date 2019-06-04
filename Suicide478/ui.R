@@ -46,7 +46,7 @@ shinyUI(tagList(
                  
                  sidebarPanel(
                    selectInput('external_factors', 
-                                label = h3('Choose an possible external factor'),
+                                label = h3('Choose An Possible External Factor!'),
                   choices = list(
                     'GDP' = 'GDP',
                     'Health Expenditure' = 'Health',
@@ -57,23 +57,26 @@ shinyUI(tagList(
                  tags$br(),
                  tags$h3("Description"),
                  tags$h5(class = "context",
-                         "With this interactive bar chart, you can explore the
-                         dataset within different time periods. In the specific
-                         decade you choose, the graph displays numbers of shark
-                         attacks against different time periods. For instance,
-                         if you want to learn about the month with the highest
-                         frequency of attacks and the month with less frequency of
-                         attacks between 2010-2017. You can do this in two simple
-                         steps:"),
-                 tags$h5(class = "context", "1. Set the decade to 2010-2017"),
-                 tags$h5(class = "context", "2. Set the unit, time period, as month."),
-                 tags$h5(class = "context", "That's it! Feel free to explore!")
-                
+                         "In this section, we are exploring three possible external factors, 
+                          GDP per capita, Health expenditure, and Unemployment rate which may affect 
+                          suicide rates.  To see if there is any relationship or correlation between 
+                          these possible external factors and suicide rates at the national level. 
+                          We use the mean suicide rates from 1985 to 2010 for each country, 
+                          mean GDP per capita from 1985 to 2010 for each country, mean unemployment rates 
+                          from 2010 to 2014 and mean health expenditure from 1995 to 2010 as indicators to 
+                          do the analysis.  You can do this in one simple
+                         step:"),
+                 tags$h5(class = "context", "1. Use above panel to select the external factor you want to
+                         explore"),
+                 tags$h3("Interpretation"),
+                 tags$h5(class = "context", textOutput('interp'))
                ),
                mainPanel(
                  plotOutput("external_plot",
                             width = "800px", height = "600px"
                  )
+                 
+                 
              )
                )
             ),
