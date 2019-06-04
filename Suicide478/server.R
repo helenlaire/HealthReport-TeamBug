@@ -8,6 +8,10 @@
 #
 
 library(shiny)
+source("../External_Factors/carol_analysis.R")
+external <- read.csv(file = "../External_Factors/data/prepare_data.csv")
+source("../Overall-Claire/analysis.R")
+combined_df <- read.csv(file = "../Overall-Claire/data/combined.csv")
 
 source("Prevention-Mengjiao/prevention_analysis.R")
 
@@ -17,17 +21,13 @@ shinyServer(function(input, output, session) {
   
   
   ## Claire's Code
-  
-  
+  output$trend_graph <- renderPlot({
+    return(overall_trend(combined_df, input$region1, input$region2,input$gender))
+  })  
   ## Daisy's Code
   
   
   ## Mengjiao's Code
-
-  
-  # ADD REACTIVE FUNCTION FOR DATASET
-
-  
   output$years_factors_plot <- renderPlot({
     dataset <- mental_data
     factors <- input$choose_factors
@@ -36,8 +36,8 @@ shinyServer(function(input, output, session) {
     years <- input$choose_year
 
     adjusted_dataset <- dataset[, filter_factors] %>%
-      filter(Year %in% years) %>%
-      mutate(Year = as.factor(Year))
+      dplyr::filter(Year %in% years) %>%
+      dplyr::mutate(Year = as.factor(Year))
     
     factor_col <- adjusted_dataset[, factors]
     
@@ -59,7 +59,7 @@ shinyServer(function(input, output, session) {
     }
     
     plot <- ggplot(adjusted_dataset, aes(x=MENTHLTH, y=factor_col)) + 
-      geom_line(aes(col = as.factor(Year)), na.rm = TRUE) + 
+      geom_line(aes(col = Year), na.rm = TRUE) + 
       geom_smooth(method="lm", se=F, na.rm = TRUE) +
       labs(title=plot_title,
            x = "Days of Mental Health Not Good for the Past 30 Days",
@@ -98,14 +98,18 @@ shinyServer(function(input, output, session) {
     years <- input$choose_year 
     
     adjusted_dataset <- dataset[, filter_factors] %>%
-      filter(Year %in% years) %>%
+      dplyr::filter(Year %in% years) %>%
       spread(key = Year, value = `factors`)
     
     head(adjusted_dataset, n = 100)
   })
   
   ## Carol's Code
+  output$external_plot <- renderPlot({
+    return(create_plot(external, input$external_factors))
+  })
   
-  
-  
+  output$interp <- renderText({
+    return(create_text(input$external_factors))
+  })
 })

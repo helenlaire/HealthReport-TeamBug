@@ -26,25 +26,45 @@ protective_factor_list <- list("Health Care Coverage" = "HLTHPLN1",
                                "Degree of Life Satisfaction" = "LSATISFY",
                                "Education Level" = "EDUCA")
 
+combined_df <- read.csv(file = "../Overall-Claire/data/combined.csv")
+state_list <- unique(combined_df$States)
+gender_list <- unique(combined_df$Gender)
+
 # Define UI for application that draws a histogram
 shinyUI(tagList(
   navbarPage(theme = shinytheme("slate"),
              "Suicide",
-             
              # Claire's Panel
              tabPanel(
-               "About Suicide",
-               tabsetPanel(
-                 #tab1 introduction
-                 tabPanel(
-                   "Introduction"
-                   # includeMarkdown("Script/TaxMarkDown.Rmd")
+               "Overall Trend",
+               includeCSS('style.css'),
+               titlePanel(tags$div(tags$h1(class = "Title",
+                                           "Intentional Self-Harm Trend"))),
+               sidebarLayout(
+                 sidebarPanel(
+                   selectInput('region1', 
+                               label = h3('Select a State'),
+                               choices = state_list,
+                               width = '200px'),
+                   selectInput('region2', 
+                               label = h3('Select a State'),
+                               choices = state_list,
+                               width = '200px'),
+                   selectInput('gender', 
+                               label = h3('Select a Gender'),
+                               choices = gender_list,
+                               width = '200px'),
+                   tags$br(),
+                   tags$h3("Description"),
+                   tags$h5(class = "context",
+                           "With this interactive bar chart, you can explore the"),
+                   tags$h5(class = "context", "1. Set the decade to 2010-2017")
+                   
                  ),
-                 
-                 # more panels overhere
-                 tabPanel(
-                   "Sub - Panel 2"
-                   # includeMarkdown("Script/TaxMarkDown.Rmd")
+                 mainPanel(
+                   plotOutput("trend_graph",
+                              width = "800px", height = "600px"
+                   )
                  )
                )
              ),
@@ -52,20 +72,46 @@ shinyUI(tagList(
              # Carol's Panel
              tabPanel(
                "Worldwide Statistics",
-               tabsetPanel(
-                 #tab1 introduction
-                 tabPanel(
-                   "Introduction"
-                   # includeMarkdown("Script/TaxMarkDown.Rmd")
-                 ),
+               titlePanel(tags$div(tags$h1(class = "Title",
+                                           "Worldwide Statistics: External Factors"))),
+               sidebarLayout(
                  
-                 # more panels overhere
-                 tabPanel(
-                   "Sub - Panel 2"
-                   # includeMarkdown("Script/TaxMarkDown.Rmd")
+                 sidebarPanel(
+                   selectInput('external_factors', 
+                                label = h3('Choose An Possible External Factor!'),
+                  choices = list(
+                    'GDP' = 'GDP',
+                    'Health Expenditure' = 'Health',
+                    'Unemployment Rate' = 'Unemployment'
+                  ),
+                  width = '200px'
+                 ),
+                 tags$br(),
+                 tags$h3("Description"),
+                 tags$h5(class = "context",
+                         "In this section, we are exploring three possible external factors, 
+                          GDP per capita, Health expenditure, and Unemployment rate which may affect 
+                          suicide rates.  To see if there is any relationship or correlation between 
+                          these possible external factors and suicide rates at the national level. 
+                          We use the mean suicide rates from 1985 to 2010 for each country, 
+                          mean GDP per capita from 1985 to 2010 for each country, mean unemployment rates 
+                          from 2010 to 2014 and mean health expenditure from 1995 to 2010 as indicators to 
+                          do the analysis.  You can do this in one simple
+                         step:"),
+                 tags$h5(class = "context", "1. Use above panel to select the external factor you want to
+                         explore"),
+                 tags$h3("Interpretation"),
+                 tags$h5(class = "context", textOutput('interp'))
+               ),
+               mainPanel(
+                 plotOutput("external_plot",
+                            width = "800px", height = "600px"
                  )
+                 
+                 
+             )
                )
-             ),
+            ),
              
              # Daisy's Panel
              tabPanel(
@@ -88,28 +134,22 @@ shinyUI(tagList(
              # Mengjiao's Panel
              tabPanel(
                "Protective Factors of Mental Health",
-               tabsetPanel(
-                 
-                 #tab1 How does the availability of health care impact the chance of one committing suicide
-                 tabPanel(
-                   "Comparison of Protective Factors on Mental Helath Across Years",
-                   h4("Chose your interested protective factors to see the trend on how it assocaiated with mental health for past several years."),
-                   
+                  titlePanel(tags$div(tags$h1(class = "Title",
+                                           "US Statistics: Protective Factors"))),
                    
                    # sidebar panel
                    sidebarPanel(
-                     
-                     selectInput("choose_factors", label = h4("Choose Protective Factors"), 
+                     selectInput("choose_factors", label = tags$h3("Choose Protective Factors"), 
                                  choices = protective_factor_list, 
                                  selected = "HLTHPLN1"),
                      
-                     checkboxGroupInput("choose_year", label = h4("Choose Years"), 
+                     checkboxGroupInput("choose_year", label = tags$h3("Choose Years"), 
                                         choices = year_list,
                                         selected = year_list),
                      
                      actionButton("UncheckYear", label = "Check/Uncheck Year"),
                      
-                     br(),
+                     tags$br(),
                      helpText("Please note that the data for 'Frequency of getting emotional support' and 'Degree of Life Satisfaction' is not available in 2011 and 2012")
                      
                    ),
@@ -122,17 +162,16 @@ shinyUI(tagList(
                        tabPanel(
                          "Line Plot",
                          plotOutput("years_factors_plot", width = "100%"),
-                         br(),
+                         tags$br(),
                          textOutput("risk_factor_text"),
                          textOutput("year_text")
                         ),
                        tabPanel(
                          "View Data",
-                         tableOutput("chartTable"))
-                    )
-                  )
+                         tableOutput("chartTable")
+                       )
+                   )
                 )
-               )
              )
   )
 ))
