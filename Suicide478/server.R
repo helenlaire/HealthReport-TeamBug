@@ -10,14 +10,17 @@
 library(shiny)
 source("../External_Factors/carol_analysis.R")
 external <- read.csv(file = "../External_Factors/data/prepare_data.csv")
+source("../Overall-Claire/analysis.R")
+combined_df <- read.csv(file = "../Overall-Claire/data/combined.csv")
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
   
   
   ## Claire's Code
-  
-  
+  output$trend_graph <- renderPlot({
+    return(overall_trend(combined_df, input$region1, input$region2,input$gender))
+  })  
   ## Daisy's Code
   
   
