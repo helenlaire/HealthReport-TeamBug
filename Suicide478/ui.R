@@ -21,6 +21,7 @@ shinyUI(tagList(
              # Claire's Panel
              tabPanel(
                "Worldwide Statistics",
+               includeCSS('style.css'),
                titlePanel(tags$div(tags$h1(class = "Title",
                                            "Overall Trend"))),
                sidebarLayout(
