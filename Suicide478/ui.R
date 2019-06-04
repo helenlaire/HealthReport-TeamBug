@@ -20,10 +20,10 @@ shinyUI(tagList(
              "Suicide",
              # Claire's Panel
              tabPanel(
-               "Worldwide Statistics",
+               "Overall Trend",
                includeCSS('style.css'),
                titlePanel(tags$div(tags$h1(class = "Title",
-                                           "Overall Trend"))),
+                                           "Intentional Self-Harm Trend"))),
                sidebarLayout(
                  sidebarPanel(
                    selectInput('region1', 
