@@ -32,5 +32,7 @@ shinyServer(function(input, output) {
     return(create_plot(external, input$external_factors))
   })
   
-  
+  output$interp <- renderText({
+    return(create_text(input$external_factors))
+  })
 })
