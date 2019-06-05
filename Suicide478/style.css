@@ -7,6 +7,11 @@
   font-size:25pt;
 }
 
+h2 {
+  font-family: helvetica;
+  color: white;  
+  font-size:15pt
+}
 
 h5 {
   font-family: Optima, sans-serif;
@@ -14,14 +19,6 @@ h5 {
   padding: 2;
   margin: 2;
   font-size: 10pt;
-
-}
-
-h2 {
-  font-family: Optima, sans-serif;
-  color: white;  
-  font-size:15pt
-
 
 }
 

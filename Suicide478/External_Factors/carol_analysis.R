@@ -28,7 +28,11 @@ create_plot <- function(df, select){
 
 create_text <- function(select){
   if(select == 'GDP'){
-    text <- 'For the first section, we compare the suicide rates with the GDP per capita in each country to 
+    text <- 'According to the definition of GDP per capita, it is the best measurement of a 
+    standard of living in a country and how prosperous a country feels to each of its citizens. 
+    Then, I am very curious about if the suicide prevalence or mental health condition in a country 
+    is related to the living standard or economic growth. Does better life quality mean lower suicide 
+    rates? So for the first section, we compare the suicide rates with the GDP per capita in each country to 
     see if there is any relationship between them. However, according to the 
     visual, we do not see any obvious correlation between these two variables. Countries with lower GDP per 
     capita have varied suicide rates in a wide range and countries with higher GDP do not have obviously 
