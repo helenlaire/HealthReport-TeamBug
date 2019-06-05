@@ -2,6 +2,7 @@ library(plyr)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(plotly)
 
 create_plot <- function(df, select){
   if(select == 'GDP'){
@@ -23,7 +24,7 @@ create_plot <- function(df, select){
       labs(title = 'The relationship between Unemployment Rate and Suicide Rate', x = 'Suicide Rate(Unit:Percentage)',
            y = 'Unemployment Rate(Unit:Percentage)')
   }
-  return(p)
+  ggplotly(p)
 }
 
 create_text <- function(select){

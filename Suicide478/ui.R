@@ -141,7 +141,7 @@ health expenditure in a given year, calculated in national currency units in cur
                  
               ),
               mainPanel(
-                 plotOutput("external_plot",
+                 plotlyOutput("external_plot",
                             width = "800px", height = "600px"
                  ),
                  tags$h2("Interpretation"),

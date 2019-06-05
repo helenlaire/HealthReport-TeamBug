@@ -215,7 +215,7 @@ shinyServer(function(input, output, session) {
   })
   
   ## Carol's Code
-  output$external_plot <- renderPlot({
+  output$external_plot <- renderPlotly({
     return(create_plot(external, input$external_factors))
   })
   
