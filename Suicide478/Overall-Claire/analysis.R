@@ -3,8 +3,10 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(plotly)
-overall_trend <- function(combined_df,state_one, state_two, gender_choice){
 
+# the function will generate an interative graphs about suicide rate in chosen states 
+overall_trend <- function(combined_df,state_one, state_two, gender_choice){
+# combine states data with united states data
 chosen_states <- combined_df %>% filter(States == state_one| States == state_two| States == "United States")
 chosen_gender <- chosen_states %>% filter(Gender == gender_choice)
 
@@ -24,7 +26,7 @@ p <- ggplot(data = chosen_gender) +
 
 ggplotly(p)
 }
-
+# the following function will render text to interprete the suicide rate graph
 suicide_text <- function(combined_df, state_one, state_two, gender_choice){
   state_one_df <- combined_df %>% filter(States == state_one) %>% filter(Gender == gender_choice)
   state_one_min <- state_one_df %>% filter(Rate == min(Rate))
@@ -40,7 +42,7 @@ suicide_text <- function(combined_df, state_one, state_two, gender_choice){
   state_two_max_row <- head(state_two_max,1)
   state_two_2000 <- state_two_df %>% filter(Year == "2000")
   state_two_2010 <- state_two_df %>% filter(Year == "2010")
-  
+  # different statement for female and male
   if(gender_choice == "Female"){
     gender_analysis <- "Suicide rate of female in the United States is increasing from 2000 to 2010. The suicide rate of U.S. in 2000 is 
   4.01%, and the suicide rate in 2010 is 5.16%. In those 10 years, the general trend of suicide rate is increasing except in 2002 and 2004.

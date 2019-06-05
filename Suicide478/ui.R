@@ -12,7 +12,7 @@ library(shinythemes)
 library(markdown)
 library(plotly)
 library(DT)
-
+source("introduction.R")
 year_list <- list("2011" = 2011, 
                   "2012" = 2012,
                   "2013" = 2013,
@@ -34,13 +34,28 @@ gender_list <- unique(combined_df$Gender)
 # Define UI for application that draws a histogram
 shinyUI(tagList(
   navbarPage(theme = shinytheme("slate"),
-    "Suicide",
-             # Claire's Panel
+    titlePanel("Suicide"),
+    
+    tabsetPanel(
+      type = "tabs",
+    tabPanel(
+      "Introduction",
+      h3("Purpose"),
+      p(purpose),
+      h3("Background Information"),
+      p(info),
+      h3("Data Description"),
+      p(data_one),
+      p(data_two),
+      p(data_three)
+    ),
+    
+    
+             # Overall trend panel
              tabPanel(
                "Overall Trend",
                includeCSS('style.css'),
-               titlePanel(tags$div(tags$h1(class = "Title",
-                                           "Intentional Self-Harm Trend"))),
+               titlePanel(tags$div(tags$h1(class = "Title","Suicide Trend"))),
                tags$h5("In this section, we focus on the U.S. suicide trend across years. We want to study the suicide 
                        rate trend in different states in the U.S.: how the suicide rate for a specific state changes 
                        from 2000 to 2010, how is the suicide rate of a state compared to the national suicide rate, 
@@ -49,6 +64,7 @@ shinyUI(tagList(
                        and Prevention. It includes information about suicide rate in all states in the U.S. from 2000 to 2010. 
                        In the panel below, you can choose two states in the U.S., choose either female or male, and the graph 
                        below will show you the trend in your selected states."),
+               # for user to select two states and gender
                sidebarLayout(
                  sidebarPanel(
                    selectInput('region1', 
@@ -64,7 +80,8 @@ shinyUI(tagList(
                                choices = gender_list,
                                width = '200px')
                    
-                 ),
+                  ),
+                 # render graph and interpretation about the graph
                  mainPanel(
                    plotlyOutput("trend_graph",
                               width = "800px", height = "600px"
@@ -236,4 +253,4 @@ health expenditure in a given year, calculated in national currency units in cur
                 )
              )
   )
-))
+)))
