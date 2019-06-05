@@ -17,8 +17,7 @@ source("Prevention-Mengjiao/prevention_analysis.R")
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
-  
-  
+
   ## Claire's Code
   output$trend_graph <- renderPlotly({
     return(overall_trend(combined_df, input$region1, input$region2,input$gender))
@@ -106,31 +105,31 @@ shinyServer(function(input, output, session) {
   
   
   ## Mengjiao's Code
-  ### Protective factor plot
+  
+  ### render the protective factor plot
   output$years_factors_plot <- renderPlotly({
     dataset <- mental_data
     factors <- input$choose_factors
     filter_factors <- append(c("Year", "MENTHLTH"), factors)
     years <- input$choose_year
-
+    
+    # filter data based on inputs
     adjusted_dataset <- dataset[, filter_factors] %>%
       dplyr::filter(Year %in% years) %>%
       dplyr::mutate(Year = as.factor(Year), Days = MENTHLTH)
     
-    Percentage <- adjusted_dataset[, factors]
-    
-    output$risk_factor_text <- renderText({
-      paste0("You have chosen risk factor: ", changefactor(input$choose_factors))
-    })
-    
-  
+    # based on chosen years, output different graph title
     if (length(input$choose_year) == 0) {
       plot_title <- paste0("Year has not been selected")
     } else if (length(input$choose_year) == 1) {
-      plot_title <- paste0("Days of Mental Health Not Good for the Past 30 Days in ", input$choose_year, " by ", changefactor(input$choose_factors))
+      plot_title <- paste0("Days of Mental Health Not Good for the Past 30 Days by ", changefactor(input$choose_factors), " in ", input$choose_year)
     } else if (length(input$choose_year) > 1) {
-      plot_title <- paste0("Days of Mental Health Not Good for the Past 30 Days from ", input$choose_year[1], " to ", tail(input$choose_year, n=1), " by ", changefactor(input$choose_factors))
+      chosen_year <- paste(input$choose_year,collapse=" ")
+      plot_title <- paste0("Days of Mental Health Not Good for the Past 30 Days by ", changefactor(input$choose_factors), " in ", chosen_year)
     }
+    
+    # change numbers to percentage
+    Percentage <- adjusted_dataset[, factors]
     
     plot <- ggplot(adjusted_dataset, aes(x=Days, y=Percentage)) + 
       geom_line(aes(col = Year), na.rm = TRUE) + 
@@ -143,11 +142,13 @@ shinyServer(function(input, output, session) {
       theme(plot.background = element_rect(fill = "grey88")) + 
       ylim(0, 100)
     
+    # add hovering data to the plot
     plot<- ggplotly(plot)
-    
+      
     return(plot)
   })
-  
+
+  # observe if the uncheckyear is clicked, if clicked, either empty/select all options
   observe({
     if (input$UncheckYear > 0) {
       if (input$UncheckYear %% 2 == 0){
@@ -165,11 +166,22 @@ shinyServer(function(input, output, session) {
     }
   })
   
+  # render users choice for the years they chose
   output$year_text <- renderText({
-    chosen_year <- paste(input$choose_year,collapse=" ")
-    paste0("You have chose the following years: ", chosen_year)
+    if(length(input$choose_year) != 0) {
+      chosen_year <- paste(input$choose_year,collapse=" ")
+      output <- paste0("You have chose the following years: ", chosen_year)
+    } else {
+      output <- "No years are selected"
+    }
   })
   
+  # render users choice for the protective factor they chose
+  output$risk_factor_text <- renderText({
+    paste0("You have chosen risk factor: ", changefactor(input$choose_factors))
+  })
+  
+  # render a interpretation for the protective factor for line graph
   output$interpretation_protective <- renderText({
     association <- "lower"
     effect <- "positive"
@@ -182,6 +194,7 @@ shinyServer(function(input, output, session) {
     output_text <- paste0(output_text, "This corresponds with our prediction, that the existence of the ", changefactor(input$choose_factors), " is a protective factor of healthy mental health, which could be suggested to the general public.")
   })
   
+  # render a interpretation for the protective factors' trends across year graph
   output$interpretation_protective_trends <- renderText({
     if (input$choose_factors == "EXERANY2" | input$choose_factors == "EDUCA") {
       across_year_variation <- " association across year is the most steady, the shapes overlapped the most, suggesting it have not been changed much for the past several years. This is same as our predictions, 
@@ -198,8 +211,10 @@ shinyServer(function(input, output, session) {
     }
     output_text <- paste0("Overall, across all year selected, the trends for ", changefactor(input$choose_factors), " was roughly the same, with some flutuation.")
     output_text <- paste0(output_text, " Comparing to the other factors, ", changefactor(input$choose_factors), "'s ", across_year_variation)
-    })
+    output_text
+  })
   
+  # render a chart table for data used for the current graph
   output$chartTable <- renderTable({
     dataset <- mental_data
     factors <- input$choose_factors

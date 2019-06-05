@@ -204,9 +204,14 @@ shinyUI(tagList(
              # Mengjiao's Panel
              tabPanel(
                "Protective Factors of Mental Health",
+                  
+                  # a title for the tab
                   titlePanel(
                     tags$div(tags$h1(class = "Title",
-                                           "US Statistics: Protective Factors"))),
+                                           "US Statistics: Protective Factors"))
+                  ),
+               
+                  # brief description of the tab
                   tags$h5("In this section, we are exploring six possible protective factors: 'availability health care', 'affordability of health care', 'Positive physical development - Exercise', 'Education', 'Emotional support', 'Degree of Life Satisfaction'. 
                            These factors are carefully selected based on past literatures and availability of data. Our data come from Behavior Risk Factor Surveillance System from 2011 to 2015 and wrangled through package of survey design.
                            Since it is impossible to experimentally measure the causation effect of factors on suicide due to ethical reasons, the factors are instead associated with reported days of mental health feeling not good, as it often predicts depression, anxiety
@@ -215,18 +220,23 @@ shinyUI(tagList(
                            The line graph that displayed one the side panel indicate both the changing of association across years, as well as an estimation of association line for all data in selected years.
                            A chart table is also available for anyone who might be interested in the data."),
                   br(),
+             
                    # sidebar panel
                    sidebarPanel(
+                     # select-box: choose one protective factor
                      selectInput("choose_factors", label = tags$h2("Choose Protective Factors"), 
                                  choices = protective_factor_list, 
                                  selected = "HLTHPLN1"),
                      
+                     # check-box: choose year
                      checkboxGroupInput("choose_year", label = tags$h2("Choose Years"), 
                                         choices = year_list,
                                         selected = year_list),
                      
+                     # action button: check and uncheck all selections of checkbox "choose_year"
                      actionButton("UncheckYear", label = "Check/Uncheck Year"),
                      
+                     # brief explanations for all the protective factors mentioned above
                      tags$br(),
                      tags$h2("Protective Factors"),
                      tags$h5("Health Care Coverage: people who are under health care coverage"),
@@ -243,11 +253,14 @@ shinyUI(tagList(
                    # main panel
                    mainPanel(
                      tabsetPanel(
-                       id = 'subpanels1',
                        tabPanel(
                          "Line Plot",
-                         plotlyOutput("years_factors_plot", width = "100%"),
+                         
+                         # render a line plot for observing associations between protective factors and mental illness
+                         conditionalPanel("input.choose_year != 0", plotlyOutput("years_factors_plot", width = "100%")),
                          tags$br(),
+                         
+                         # render users choices and interpretation for the line plot
                          tags$h6(textOutput("risk_factor_text")),
                          tags$h6(textOutput("year_text")),
                          tags$h2("Interpretation"),
@@ -255,6 +268,8 @@ shinyUI(tagList(
                          tags$h5(textOutput("interpretation_protective_trends"))
                          
                         ),
+                       
+                       # render a chart for direct data observation
                        tabPanel(
                          "View Data",
                          tableOutput("chartTable")

@@ -60,17 +60,6 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 
 ---
 
-### <span style="font-family:Papyrus; font-size:1em;">Group Members</span> 
-**Mengjiao Li**: A junior student major in Informatics and Psychology. Love animals, esp. cats! Mainly did the Protective Factor Section
-
-**Chuqian Yin**: A junior student major in Informatics, has huge enthuastics in data analysis and data visualization, mainly did the External Factor Section.
-
-**Daisy**
-
-**Claire Zhang**
-
----
-
 ### <span style="font-family:Papyrus; font-size:1em;">Data Source</span> 
 
 **Overall Trend**
@@ -86,8 +75,8 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 **Risk Factors of Depression**
 
 
-**Protective Factors of Mental Health: The fourth**
-* We use data collected by 
+**Protective Factors of Mental Health**
+* We use data collected information about a variety of risk factor and its association with mental health to analyze and visualize how each factor may act as a protection for mental illness. More specifically, we chose six factors: "Health Care Coverage", "Affordability of Medical Cost", "Exercises", "Frequency of getting emotional support", "Degree of Life Satisfaction","Education Level" that psychologists and public health practictioners have predicted might have an impact on the mental health and compared it with the response to the question - "Number of days reported mental health not good". The data was officially collected by [The Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/annual_data/2015/pdf/overview_2015.pdf), a nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. It is stored on [Kaggle](https://www.kaggle.com/cdc/behavioral-risk-factor-surveillance-system#2012.csv) and wrangled based on its [codebook](https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf) and [category module](https://www.cdc.gov/brfss/questionnaires/modules/category2015.htm). 
  
 
 ---
@@ -104,6 +93,17 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 `tidyverse`
 `plotly`
 `svydesign`
+
+---
+
+### <span style="font-family:Papyrus; font-size:1em;">Group Members</span> 
+**Mengjiao Li**: A UW student major in Informatics and Psychology. Love animals, esp. cats! Mainly did the Protective Factor Section
+
+**Chuqian Yin**: A junior student major in Informatics, has huge enthuastics in data analysis and data visualization, mainly did the External Factor Section.
+
+**Daisy**
+
+**Claire Zhang**
 
 ---
 
