@@ -36,7 +36,8 @@ Our guide will present an organize visualization of data that helps answer the f
 1) How would a person fit into a county by their adjusted gross income? </br>
 2) What are the housing affordability compared across all counties by different years? </br>
 3) What is the rate of economic progression over the years by counties based on poverty rate? </br>
-4) Does the $15 minimum wage positively affect poverty rate?
+4) Does the $15 minimum wage positively affect poverty rate?</br>
+5) What is the possible external factor related to suicide rate in national level? Higher living standard means lower suicide rates? Better health system means lower suicide rates? Higher unemployment rates means higher suicide rates?
 
 ---
 
@@ -59,11 +60,27 @@ Our guide will present an organize visualization of data that helps answer the f
 
 
 ### <span style="font-family:Papyrus; font-size:1em;">Group Members</span> 
-Mengjiao Li, Chuqian Yin, Daisy, Claire Zhang
+**Mengjiao Li**
+
+**Chuqian Yin**: A junior student major in Informatics, has huge enthuastics in data analysis and data visualization, mainly did the External Factor Section.
+
+**Daisy**
+
+**Claire Zhang**
 
 ---
 
-### <span style="font-family:Papyrus; font-size:1em;">Source</span> 
+### <span style="font-family:Papyrus; font-size:1em;">Data Source</span> 
+1. We use data collected information about countries’ **GDP** and **prevalence of depression** from 1985 and 2016. The data was accessed from [Kaggle](https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016). This compiled dataset pulled from four other datasets linked by time and place, and was built to find signals correlated to increased suicide rates among different cohorts globally, across the socio-economic spectrum. The orginal data sources include data from [UN Development Program](http://hdr.undp.org/en/indicators/137506), [World Bank](http://databank.worldbank.org/data/source/world-development-indicators#), [Suicide in the Twenty-First Century](https://www.kaggle.com/szamil/suicide-in-the-twenty-first-century/notebook) and [World Health Orginzation](http://www.who.int/mental_health/suicide-prevention/en/). We will use this data to study the relationship between depression and GDP, and answer the question that “Worldwide, how do external factors such as GDP, impact populations’ mental health, transfer to suicide rate? ”.</br>
+2. We use data collected information about **per capita total expenditure on health expressed** at average exchange rate for that year in US$ at current prices from 1995 to 2010. We use health expenditure per capita for each country in this dataset as the indicator of avaliable meadical resource and health care system in a country to see if the avaliable medical resource is a determinant external factor to the suicide rate. The data was accessed from [Kaggle](https://www.kaggle.com/onlyricks/healthspending).</br>
+3. We use data collected information about worldwide **unemployment rates** (modeled ILO estimate) from 2010 to 2014. As some suicide cases happened before are very likely related to losing a job or difficulty of finding a job, we use this data to explore if unemployment rate in a country is related to suicide rates. The data was accessed from [Kaggle](https://www.kaggle.com/sovannt/world-bank-youth-unemployment).
+
+
+
+ 
+
+---
+### <span style="font-family:Papyrus; font-size:1em;">Citation</span> 
 
 [1] Franklin, J., Huang, X., & Bastidas, D. (2018). Virtual reality suicide: Development of a translational approach for studying suicide causes. Behaviour Research and Therapy, Behaviour Research and Therapy, 12/2018.
 https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=TN_crossref10.1016/j.brat.2018.12.013&context=PC&vid=UW&search_scope=all&tab=default_tab&lang=en_US

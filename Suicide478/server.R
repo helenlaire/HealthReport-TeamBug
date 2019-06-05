@@ -215,10 +215,12 @@ shinyServer(function(input, output, session) {
   })
   
   ## Carol's Code
+  #Render the Plot created in function
   output$external_plot <- renderPlotly({
     return(create_plot(external, input$external_factors))
   })
   
+  #Render the text created in function
   output$interp <- renderText({
     return(create_text(input$external_factors))
   })

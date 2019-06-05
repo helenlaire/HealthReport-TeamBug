@@ -17,7 +17,7 @@ p <- ggplot(data = chosen_gender) +
   theme(
     panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
     panel.background = element_blank(), axis.line = element_line(colour = "black")
-  )+
+  )+scale_x_continuous(breaks = chosen_gender$Year) +
   labs(
     title = paste(gender_choice, "Suicide Trend in", state_one, "and", state_two, " from 2000 to 2010"), 
     y = "suicide rate (%)"

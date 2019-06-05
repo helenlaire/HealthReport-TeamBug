@@ -94,33 +94,38 @@ shinyUI(tagList(
              
              # Carol's Panel
              tabPanel(
+               #Panel Title
                "Worldwide Statistics",
+               #Title on the top
                titlePanel(tags$div(tags$h1(class = "Title",
                                            "Worldwide Statistics: External Factors"))),
+               #Description and introduction for this panel
                tags$h5("In this section, we are exploring three possible external factors, 
-                       GDP per capita, Health expenditure, and Unemployment rate which may affect 
+                       GDP per capita, Health expenditure per capita, and Unemployment rate which may affect 
                        suicide rates.  To see if there is any relationship or correlation between 
                        these possible external factors and suicide rates at the national level. 
                        We use the mean suicide rates from 1985 to 2010 for each country, 
                        mean GDP per capita from 1985 to 2010 for each country, mean unemployment rates 
-                       from 2010 to 2014 and mean health expenditure from 1995 to 2010 as indicators to 
-                       do the analysis.  You can do this in one simple
+                       from 2010 to 2014 and mean health expenditure per capita 
+                       from 1995 to 2010 as indicators to do the analysis. You can do this in one simple
                        step: Use below panel to select the external factor you want to
                          explore!"),
                
                sidebarLayout(
                  
                  sidebarPanel(
+                   #select widget to choose users' interested external factors analysis
                    selectInput('external_factors', 
                                 label = h2('Choose An Possible External Factor!'),
                   choices = list(
                     'GDP' = 'GDP',
-                    'Health Expenditure' = 'Health',
+                    'Health Expenditure per capita' = 'Health',
                     'Unemployment Rate' = 'Unemployment'
                   ),
                   width = '200px'
                  ),
                  tags$br(),
+                 #Description and definition for three external factors
                  tags$h2("External Factors"),
                  tags$h5("GDP per capita: GDP per capita is a measure of a country's economic output that accounts 
                    for its number of people. It divides the country's gross domestic product by its total 
@@ -128,22 +133,25 @@ shinyUI(tagList(
                    It tells you how prosperous a country feels to each of its citizens."
                  ),
                  tags$br(),
-                 tags$h5("Health Expenditure: Total expenditure on health is the sum of general government health expenditure and private
-health expenditure in a given year, calculated in national currency units in current prices. Health Expenditure
-                   of a country also reflects the avaliable medical resources level and the development of 
-                   health care system in a country."
+                 tags$h5("Health Expenditure per capita: Expenditure on health per capita is the sum 
+                    of general government health expenditure and private health expenditure in a given 
+                    year divided by total popualtion in a country, calculated in national currency units 
+                    in current prices. It also reflects the avaliable 
+                    medical resources for each citizen and the development of health care system in a country."
                  ),
                  tags$br(),
                  tags$h5("Unemployment Rate: The unemployment rate is defined as the percentage of unemployed workers in the 
-                         total labor force. Workers are considered unemployed if they currently do not work, 
-                         despite the fact that they are able and willing to do so.")
+                        total labor force. Workers are considered unemployed if they currently do not work, 
+                        despite the fact that they are able and willing to do so.")
                  
                  
               ),
+              #Visualization
               mainPanel(
                  plotlyOutput("external_plot",
                             width = "800px", height = "600px"
                  ),
+                 #Interpretation
                  tags$h2("Interpretation"),
                  tags$h5(class = "context", textOutput('interp'))
               )
