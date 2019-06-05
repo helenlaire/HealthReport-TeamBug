@@ -88,10 +88,10 @@ shinyServer(function(input, output, session) {
   
   
   ## Mengjiao's Code
+  ### Protective factor plot
   output$years_factors_plot <- renderPlot({
     dataset <- mental_data
     factors <- input$choose_factors
-    
     filter_factors <- append(c("Year", "MENTHLTH"), factors)
     years <- input$choose_year
 
@@ -110,6 +110,36 @@ shinyServer(function(input, output, session) {
       paste0("You have chose the following years: ", chosen_year)
     })
     
+    output$interpretation_protective <- renderText({
+      association <- "lower"
+      effect <- "positive"
+      if (input$choose_factors == "MEDCOST") {
+        association <- "higher"
+        effect <- "negative"
+      }
+      output_text <- paste0("Based on the options selected above, we could see that, overall, patients who reported higher mental health not good days often have a ", association, " percentage/chance for getting ", changefactor(input$choose_factors), ".")
+      output_text <- paste0(output_text, " In other words, participants who reported ", effect," conditions of ", changefactor(input$choose_factors), " often experience less mental health conditions.")
+      output_text <- paste0(output_text, "This corresponds with our prediction, that the existence of the ", changefactor(input$choose_factors), " is a protective factor of healthy mental health, which could be suggested to the general public.")
+    })
+    
+    output$interpretation_protective_trends <- renderText({
+      if (input$choose_factors == "EXERANY2" | input$choose_factors == "EDUCA") {
+        across_year_variation <- " association across year is the most steady, the shapes overlapped the most, suggesting it have not been changed much for the past several years. This is same as our predictions, 
+        as more education regarding mental health and regular exercise will help promote better mental and physical health. But the mechanism of how it affect mental health has not changed."
+      } else if (input$choose_factors == "EMTSUPRT" | input$choose_factors == "LSATISFY") {
+        across_year_variation <- " association across year has a lot of flutuation. This may due to smaller sample sizes comparing to other factors, which we suggest could be further analysis with larger sample data. 
+        As mentioned in the side note, the emotional support and life satisfation is only measured in two states (MINNESOTA, RHODE ISLAND), rather than all states. This may greatly impact the accuracy of the association and be biased based on culture preference and personal standards." 
+      } else if (input$choose_factors == "HLTHPLN1") {
+        across_year_variation <- " association across year is relatively steady, with slightly shift from 2011 to 2015. In general, 2015 has higher percentage of factors reported than 2011, suggesting other confounding factors that impact the change, 
+        such as policies that increase healthcare coverage. "
+      } else if (input$choose_factors == "MEDCOST") {
+        across_year_variation <- " association across year is relatively steady, with slightly shift from 2011 to 2015. In general, 2015 has lower percentage of factors reported than 2011, suggesting other confounding factors that impact the change, 
+        such as policies that made healthcare more affordable to the general publics."
+      }
+      output_text <- paste0("Overall, across all year selected, the trends for ", changefactor(input$choose_factors), " was roughly the same, with some flutuation.")
+      output_text <- paste0(output_text, " Comparing to the other factors, ", changefactor(input$choose_factors), "'s ", across_year_variation)
+    })
+    
     if (length(input$choose_year) == 0) {
       plot_title <- paste0("Year has not been selected")
     } else if (length(input$choose_year) == 1) {
@@ -122,12 +152,12 @@ shinyServer(function(input, output, session) {
       geom_line(aes(col = Year), na.rm = TRUE) + 
       geom_smooth(method="lm", se=F, na.rm = TRUE) +
       labs(title=plot_title,
-           x = "Days of Mental Health Not Good for the Past 30 Days",
-           y = "Percentage of Risk Factors within the Year",
+           x = "Days of Mental Health Not Good for the Past 30 Days (day)",
+           y = "Percentage of Risk Factors within the Year (%)",
            caption="source: BRFSS 2011-2015") + 
       theme_dark() + 
       theme(plot.background = element_rect(fill = "grey88")) + 
-      ylim(0, 1)
+      ylim(0, 100)
 
     return(plot)
   })

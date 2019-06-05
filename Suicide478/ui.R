@@ -181,9 +181,11 @@ health expenditure in a given year, calculated in national currency units in cur
                   titlePanel(
                     tags$div(tags$h1(class = "Title",
                                            "US Statistics: Protective Factors"))),
-                  tags$h5("In this section, we are exploring six possible protective factors: 'availability health care','affordability of health care','Positive physical development - Exercise','Education','Emotional support', 'Degree of Life Satisfaction'. 
+                  tags$h5("In this section, we are exploring six possible protective factors: 'availability health care', 'affordability of health care', 'Positive physical development - Exercise', 'Education', 'Emotional support', 'Degree of Life Satisfaction'. 
                            These factors are carefully selected based on past literatures and availability of data. Our data come from Behavior Risk Factor Surveillance System from 2011 to 2015 and wrangled through package of survey design.
-                           Users are able to explore their interested protective factors by seeing how it's association with mental health has changed across years. To interact with the system, users could first choose their interested protective factor, then check their interested years.
+                           Since it is impossible to experimentally measure the causation effect of factors on suicide due to ethical reasons, the factors are instead associated with reported days of mental health feeling not good, as it often predicts depression, anxiety
+                            disorder and many other mental illness. Users are able to explore their interested protective factors by seeing how it's association with mental health has changed across years. To interact with the system, 
+                           users could first choose their interested protective factor, then check their interested years.
                            The line graph that displayed one the side panel indicate both the changing of association across years, as well as an estimation of association line for all data in selected years.
                            A chart table is also available for anyone who might be interested in the data."),
                   br(),
@@ -202,13 +204,13 @@ health expenditure in a given year, calculated in national currency units in cur
                      tags$br(),
                      tags$h2("Protective Factors"),
                      tags$h5("Health Care Coverage: people who are under health care coverage"),
-                     tags$h5("Affordability of Medical Cost: peope who need to see doctor but could not because of cost "),
+                     tags$h5("Affordability of Medical Cost: peope who need to see doctor but could not because of cost in the past one year"),
                      tags$h5("Exercises: people who participate in regular exercise"),
                      tags$h5("Frequency of getting emotional support: people who get regular and emotional support that they need"),
                      tags$h5("Degree of Life Satisfaction: people who are satisfy with their life"),
                      tags$h5("Education Level: people who have completed high school"),
                      tags$br(),
-                     tags$h5("Please note that the data for 'Frequency of getting emotional support' and 'Degree of Life Satisfaction' is not available in 2011 and 2012"),
+                     tags$h6("*Please note that the data for 'Frequency of getting emotional support' and 'Degree of Life Satisfaction' is not available in 2011 and 2012"),
                      tags$br()
                    ),
                    
@@ -220,14 +222,11 @@ health expenditure in a given year, calculated in national currency units in cur
                          "Line Plot",
                          plotOutput("years_factors_plot", width = "100%"),
                          tags$br(),
-                         textOutput("risk_factor_text"),
-                         textOutput("year_text"),
+                         tags$h6(textOutput("risk_factor_text")),
+                         tags$h6(textOutput("year_text")),
                          tags$h2("Interpretation"),
-                         tags$h5("In this section, we are exploring six possible protective factors: 'availability health care','affordability of health care','Positive physical development - Exercise','Education','Emotional support', 'Degree of Life Satisfaction'. 
-                             These factors are carefully selected based on past literatures and availability of data. Our data come from Behavior Risk Factor Surveillance System from 2011 to 2015 and wrangled through package of survey design.
-                             Users are able to explore their interested protective factors by seeing how it's association with mental health has changed across years. To interact with the system, users could first choose their interested protective factor, then check their interested years.
-                             The line graph that displayed one the side panel indicate both the changing of association across years, as well as an estimation of association line for all data in selected years.
-                             A chart table is also available for anyone who might be interested in the data.")
+                         tags$h5(textOutput("interpretation_protective")),
+                         tags$h5(textOutput("interpretation_protective_trends"))
                          
                         ),
                        tabPanel(

@@ -16,6 +16,16 @@ library(tidyverse)
 mental_data <- read.csv("Prevention-Mengjiao/data/mental_data.csv", stringsAsFactors = FALSE)
 depression_data <- read.csv("Prevention-Mengjiao/data/depression_data.csv", stringsAsFactors = FALSE)
 
+mental_data <- mental_data %>%
+  mutate(
+    HLTHPLN1 = HLTHPLN1*100,
+    MEDCOST = MEDCOST*100,
+    EXERANY2 = EXERANY2*100,
+    EMTSUPRT = EMTSUPRT*100,
+    LSATISFY = LSATISFY*100,
+    EDUCA = EDUCA*100
+  )
+
 changefactor <- function(factor) {
   if(factor == "HLTHPLN1") {
     chosen_factors <- "Health Care Coverage"
@@ -53,7 +63,7 @@ years <- c(2011, 2012, 2013)
 filter_factors <- append(c("Year", "MENTHLTH"), factors)
 
 adjusted_dataset <- dataset[, filter_factors] %>%
-  filter(Year %in% years) 
+  filter(Year %in% years)
 
 factor_col <- adjusted_dataset[, factors]
 
