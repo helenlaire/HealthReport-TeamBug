@@ -115,20 +115,42 @@ shinyUI(tagList(
              
              # Daisy's Panel
              tabPanel(
-               "Risk Factors of Suicide",
-               tabsetPanel(
-                 #tab1 introduction
-                 tabPanel(
-                   "Introduction"
-                   # includeMarkdown("Script/TaxMarkDown.Rmd")
-                 ),
+               "Risk Factors of Depression",
+               
+               titlePanel("Risk Factors For Depressive Disorder"),
+               
+               sidebarLayout(
                  
-                 # more panels overhere
-                 tabPanel(
-                   "Sub - Panel 2"
-                   # includeMarkdown("Script/TaxMarkDown.Rmd")
-                 )
-               )
+                 sidebarPanel(
+                   radioButtons("year", "Select the year:", 
+                                c(2011, 2012, 2013, 2014, 2015)),
+                   tags$h2("Risk Factors"),
+                   tags$h5(class = "context", "College: college students who have been studying for 1 to 3 years"),
+                   tags$h5(class = "context", "Divorce: people who are divorced"), 
+                   tags$h5(class = "context", "Limited Activities: people who have limited activities due to health problems"),
+                   tags$h5(class = "context", "Multiple Cancer: people who have three or more cancers"),
+                   tags$h5(class = "context", "No Job: people who are out of work for 1 year or more"), 
+                   tags$h5(class = "context", "* some year may not have certain data which is not shown in the graph")
+                   ),
+                 mainPanel(
+                   plotOutput("dotPlot"),
+                   tabsetPanel(
+                     tabPanel("Male", verbatimTextOutput("explain_male"),
+                              tags$head(tags$style(HTML("
+                                                        #explain_male {
+                                                        font-size: 11px;
+                                                        }
+                                                        ")))),
+                     tabPanel("Female", verbatimTextOutput("explain_female"),
+                              tags$head(tags$style(HTML("
+                                                        #explain_female {
+                                                        font-size: 11px;
+                                                        }
+                                                        "))))
+                     
+                              )
+                  )
+              )
              ),
              
              # Mengjiao's Panel
@@ -153,7 +175,6 @@ shinyUI(tagList(
                      helpText("Please note that the data for 'Frequency of getting emotional support' and 'Degree of Life Satisfaction' is not available in 2011 and 2012")
                      
                    ),
-                   
                    
                    # main panel
                    mainPanel(

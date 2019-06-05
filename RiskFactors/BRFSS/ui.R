@@ -6,6 +6,7 @@ shinyUI(fluidPage(
   titlePanel("Risk Factors For Depressive Disorder"),
    
   sidebarLayout(
+    
     sidebarPanel(
       radioButtons("year", "Select the year:", 
                   c(2011, 2012, 2013, 2014, 2015)),
@@ -34,5 +35,6 @@ shinyUI(fluidPage(
           
         )
     )
+    
   )
 ))
