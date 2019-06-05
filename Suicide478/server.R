@@ -21,7 +21,7 @@ shinyServer(function(input, output, session) {
   
   
   ## Claire's Code
-  output$trend_graph <- renderPlot({
+  output$trend_graph <- renderPlotly({
     return(overall_trend(combined_df, input$region1, input$region2,input$gender))
   })  
   ## Daisy's Code
