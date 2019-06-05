@@ -124,7 +124,7 @@ shinyUI(tagList(
                  sidebarPanel(
                    radioButtons("year", "Select the year:", 
                                 c(2011, 2012, 2013, 2014, 2015)),
-                   tags$h2("Risk Factors"),
+                   tags$h4("Risk Factors"),
                    tags$h5(class = "context", "College: college students who have been studying for 1 to 3 years"),
                    tags$h5(class = "context", "Divorce: people who are divorced"), 
                    tags$h5(class = "context", "Limited Activities: people who have limited activities due to health problems"),
