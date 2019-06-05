@@ -57,30 +57,34 @@ shinyUI(tagList(
                        and Prevention. It includes information about suicide rate in all states in the U.S. from 2000 to 2010. 
                        In the panel below, you can choose two states in the U.S., choose either female or male, and the graph 
                        below will show you the trend in your selected states."),
+               tags$br(),
+               
                # for user to select two states and gender
                sidebarLayout(
                  sidebarPanel(
                    selectInput('region1', 
-                               label = h3('Select First State'),
+                               label = tags$h2('Select First State'),
                                choices = state_list,
                                width = '200px'),
                    selectInput('region2', 
-                               label = h3('Select Second State'),
+                               label = tags$h2('Select Second State'),
                                choices = state_list,selected = "California",
                                width = '200px'),
                    selectInput('gender', 
-                               label = h3('Select a Gender'),
+                               label = tags$h2('Select a Gender'),
                                choices = gender_list,
                                width = '200px')
                    
                   ),
+                 
                  # render graph and interpretation about the graph
                  mainPanel(
                    plotlyOutput("trend_graph",
                               width = "800px", height = "600px"
                    ),
-                   tags$h3("Interpretation"),
-                   tags$h5(class = "context", textOutput('overall'))
+                   br(),
+                   tags$h2("Interpretation"),
+                   tags$h5(textOutput('overall'))
                  )
                )
              ),
@@ -103,39 +107,40 @@ shinyUI(tagList(
                        from 1995 to 2010 as indicators to do the analysis. You can do this in one simple
                        step: Use below panel to select the external factor you want to
                          explore!"),
+               tags$br(),
                
                sidebarLayout(
                  
                  sidebarPanel(
                    #select widget to choose users' interested external factors analysis
                    selectInput('external_factors', 
-                                label = h2('Choose An Possible External Factor!'),
-                  choices = list(
-                    'GDP' = 'GDP',
-                    'Health Expenditure per capita' = 'Health',
-                    'Unemployment Rate' = 'Unemployment'
-                  ),
-                  width = '200px'
-                 ),
-                 tags$br(),
-                 #Description and definition for three external factors
-                 tags$h2("External Factors"),
-                 tags$h5("GDP per capita: GDP per capita is a measure of a country's economic output that accounts 
-                   for its number of people. It divides the country's gross domestic product by its total 
-                   population. That makes it the best measurement of a country's standard of living. 
-                   It tells you how prosperous a country feels to each of its citizens."
-                 ),
-                 tags$br(),
-                 tags$h5("Health Expenditure per capita: Expenditure on health per capita is the sum 
-                    of general government health expenditure and private health expenditure in a given 
-                    year divided by total popualtion in a country, calculated in national currency units 
-                    in current prices. It also reflects the avaliable 
-                    medical resources for each citizen and the development of health care system in a country."
-                 ),
-                 tags$br(),
-                 tags$h5("Unemployment Rate: The unemployment rate is defined as the percentage of unemployed workers in the 
-                        total labor force. Workers are considered unemployed if they currently do not work, 
-                        despite the fact that they are able and willing to do so.")
+                      tags$h2('Choose An Possible External Factor!'),
+                      choices = list(
+                        'GDP' = 'GDP',
+                        'Health Expenditure per capita' = 'Health',
+                        'Unemployment Rate' = 'Unemployment'),
+                      width = '200px'
+                   ),
+                   tags$br(),
+                   
+                   #Description and definition for three external factors
+                   tags$h2("External Factors"),
+                   tags$h5("GDP per capita: GDP per capita is a measure of a country's economic output that accounts 
+                     for its number of people. It divides the country's gross domestic product by its total 
+                     population. That makes it the best measurement of a country's standard of living. 
+                     It tells you how prosperous a country feels to each of its citizens."
+                   ),
+                   tags$br(),
+                   tags$h5("Health Expenditure per capita: Expenditure on health per capita is the sum 
+                      of general government health expenditure and private health expenditure in a given 
+                      year divided by total popualtion in a country, calculated in national currency units 
+                      in current prices. It also reflects the avaliable 
+                      medical resources for each citizen and the development of health care system in a country."
+                   ),
+                   tags$br(),
+                   tags$h5("Unemployment Rate: The unemployment rate is defined as the percentage of unemployed workers in the 
+                          total labor force. Workers are considered unemployed if they currently do not work, 
+                          despite the fact that they are able and willing to do so.")
                  
                  
               ),
@@ -146,7 +151,7 @@ shinyUI(tagList(
                  ),
                  #Interpretation
                  tags$h2("Interpretation"),
-                 tags$h5(class = "context", textOutput('interp'))
+                 tags$h5(textOutput('interp'))
               )
              )
             ),
@@ -167,21 +172,22 @@ shinyUI(tagList(
                       people who have three or more cancers and people who are out of work for 1 year or more.
                       Use the panel below to select the year you want to
                       explore!"),
+              tags$br(),
               
-              titlePanel("Risk Factors For Depressive Disorder"),
               # The graph and context section
               sidebarLayout(
                 # Year selection section
                 sidebarPanel(
-                  radioButtons("year", "Select the year:", 
+                  radioButtons("year", tags$h2("Select the year"), 
                                c(2011, 2012, 2013, 2014, 2015)),
-                  tags$h4("Risk Factors"),
-                  tags$h5(class = "context", "College: college students who have been studying for 1 to 3 years"),
-                  tags$h5(class = "context", "Divorce: people who are divorced"), 
-                  tags$h5(class = "context", "Limited Activities: people who have limited activities due to health problems"),
-                  tags$h5(class = "context", "Multiple Cancer: people who have three or more cancers"),
-                  tags$h5(class = "context", "No Job: people who are out of work for 1 year or more"), 
-                  tags$h5(class = "context", "* some year may not have certain data which is not shown in the graph")
+                  tags$br(),
+                  tags$h2("Risk Factors"),
+                  tags$h5("College: college students who have been studying for 1 to 3 years"),
+                  tags$h5("Divorce: people who are divorced"), 
+                  tags$h5("Limited Activities: people who have limited activities due to health problems"),
+                  tags$h5("Multiple Cancer: people who have three or more cancers"),
+                  tags$h5("No Job: people who are out of work for 1 year or more"), 
+                  tags$h5("* some year may not have certain data which is not shown in the graph")
                 ),
                 mainPanel(
                   # Can switch from graph to words and words to graph
@@ -196,7 +202,7 @@ shinyUI(tagList(
                   ),
                   # A explanatory section for the graph generated 
                   tags$h2("Interpretation"),
-                  tags$h5(class = "context", textOutput('rr_analysis'))
+                  tags$h5(textOutput('rr_analysis'))
                 )
               )
               ),
