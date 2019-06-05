@@ -5,8 +5,8 @@ account: lmj0328
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 965982
-bundleId: 2131077
+bundleId: 2131115
 url: https://lmj0328.shinyapps.io/Suicide478/
-when: 1559696471.41537
+when: 1559698020.1988
 asMultiple: FALSE
 asStatic: FALSE

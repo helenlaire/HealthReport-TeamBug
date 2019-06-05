@@ -33,7 +33,7 @@ gender_list <- unique(combined_df$Gender)
 # Define UI for application that draws a histogram
 shinyUI(tagList(
   navbarPage(theme = shinytheme("slate"),
-             "Suicide",
+    "Suicide",
              # Claire's Panel
              tabPanel(
                "Overall Trend",
@@ -228,7 +228,7 @@ health expenditure in a given year, calculated in national currency units in cur
                          textOutput("risk_factor_text"),
                          textOutput("year_text"),
                          tags$h2("Interpretation"),
-                         tags$h5(class = "context", "In this section, we are exploring six possible protective factors: 'availability health care','affordability of health care','Positive physical development - Exercise','Education','Emotional support', 'Degree of Life Satisfaction'. 
+                         tags$h5("In this section, we are exploring six possible protective factors: 'availability health care','affordability of health care','Positive physical development - Exercise','Education','Emotional support', 'Degree of Life Satisfaction'. 
                              These factors are carefully selected based on past literatures and availability of data. Our data come from Behavior Risk Factor Surveillance System from 2011 to 2015 and wrangled through package of survey design.
                              Users are able to explore their interested protective factors by seeing how it's association with mental health has changed across years. To interact with the system, users could first choose their interested protective factor, then check their interested years.
                              The line graph that displayed one the side panel indicate both the changing of association across years, as well as an estimation of association line for all data in selected years.
