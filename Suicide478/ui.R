@@ -26,7 +26,7 @@ protective_factor_list <- list("Health Care Coverage" = "HLTHPLN1",
                                "Degree of Life Satisfaction" = "LSATISFY",
                                "Education Level" = "EDUCA")
 
-combined_df <- read.csv(file = "../Overall-Claire/data/combined.csv")
+combined_df <- read.csv(file = "Overall-Claire/data/combined.csv")
 state_list <- unique(combined_df$States)
 gender_list <- unique(combined_df$Gender)
 
