@@ -32,21 +32,22 @@ state_list <- unique(combined_list$States)
 gender_list <- unique(combined_df$Gender)
 
 shinyUI(tagList(
-  headerPanel("Suicide Analysis"),
+  headerPanel("Suicide Guide"),
   fluidPage(
     theme = shinytheme("slate"),
     tabsetPanel(
             #introduction
             tabPanel(
               "Introduction",
-              tags$h3("Purpose"),
-              tags$h5(purpose),
-              tags$h3("Background Information"),
-              tags$h5(info),
-              tags$h3("Data Description"),
-              tags$h5(data_one),
-              tags$h5(data_two),
-              tags$h5(data_three)
+              includeMarkdown("IntroductionPage.Rmd")
+              # tags$h3("Purpose"),
+              # tags$h5(purpose),
+              # tags$h3("Background Information"),
+              # tags$h5(info),
+              # tags$h3("Data Description"),
+              # tags$h5(data_one),
+              # tags$h5(data_two),
+              # tags$h5(data_three)
             ),
     
     
