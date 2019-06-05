@@ -30,12 +30,15 @@ shinyServer(function(input, output, session) {
   # Daisy's code - Relative Risk Analysis 
   
   # loads the data interactively based on year selection from the users
+  # the csv file is generated based on raw data
   data <- reactive({
     data <- read.csv(paste0("data/", input$year, "_rr.csv"))
     data
   })
   
-  # draws the plot based on the data from above which contains already calculated relative risk numbers
+  # draws the plot based on the data from above which contains already 
+  # calculated relative risk numbers; the file RR Analysis.R shows 
+  # how I calculated the numbers. It is located under the data folder.
   output$dotPlot <- renderPlotly({
     p <- ggplot(data(), aes(y = Value, x = Metric, color = Sex)) +
       geom_point() +
