@@ -27,14 +27,15 @@ shinyServer(function(input, output, session) {
     return(suicide_text(combined_df, input$region1, input$region2,input$gender))
   })
   
-  # Daisy's code
+  # Daisy's code - Relative Risk Analysis 
   
-  # load the data 
+  # loads the data interactively based on year selection from the users
   data <- reactive({
     data <- read.csv(paste0("data/", input$year, "_rr.csv"))
     data
   })
   
+  # draws the plot based on the data from above which contains already calculated relative risk numbers
   output$dotPlot <- renderPlotly({
     p <- ggplot(data(), aes(y = Value, x = Metric, color = Sex)) +
       geom_point() +
@@ -44,6 +45,7 @@ shinyServer(function(input, output, session) {
     ggplotly(p)
   })
   
+  # renders an explanatory section to explain the x-axis values of the graph
   output$footnote <- renderPrint({
     cat("1. College: college students who have been studying for 1 to 3 years", 
         "2. Divorce: people who are divorced", 
@@ -54,6 +56,9 @@ shinyServer(function(input, output, session) {
         sep="\n\n")
   })
   
+  # based on the given dataframe which may have 3 - 5 metrics, changes the metric acronyms into 
+  # longer versions and returns the explanation of the relative 
+  # risk interactively which is shown in the context section
   generatesText <- function(temp) {
     for (i in 1:nrow(temp)) {
       metric = as.character(temp[i, ]$Metric)
@@ -75,6 +80,7 @@ shinyServer(function(input, output, session) {
     }
   } 
   
+  # renders the context under the male section, used the function above
   output$explain_male <- renderPrint({
     cat("In year ", 
         input$year, 
@@ -83,6 +89,7 @@ shinyServer(function(input, output, session) {
     generatesText(temp)
   })
   
+  # renders the context under the female section, used the function above
   output$explain_female <- renderPrint({
     cat("In year ", 
         input$year, 
@@ -91,6 +98,7 @@ shinyServer(function(input, output, session) {
     generatesText(temp)
   })
   
+  # renders the overall patterns discovered within the different graphs across different years
   output$rr_analysis <- renderText({
     paste("It is pretty clear that the Limited Activity is the most influential risk factor 
           among these data points through out the years no matter which sex it concerns 

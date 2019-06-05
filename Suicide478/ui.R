@@ -152,11 +152,12 @@ shinyUI(tagList(
             ),
              
              # Daisy's Panel
-            
+            # The panel of relative risk analysis for depressive disorder
             tabPanel(
               "Risk Factors of Depression",
               titlePanel(tags$div(tags$h1(class = "Title",
                                           "US Statistics: Risk Factors For Depressive Disorder"))),
+              # Introduction of the section
               tags$h5("In this section, we are exploring three to five risk factors of
                       depressive disorder to see what exposure might be highly correlated to depression
                       at the US level across years from 2011 to 2015 and sex. 
@@ -168,9 +169,9 @@ shinyUI(tagList(
                       explore!"),
               
               titlePanel("Risk Factors For Depressive Disorder"),
-              
+              # The graph and context section
               sidebarLayout(
-                
+                # Year selection section
                 sidebarPanel(
                   radioButtons("year", "Select the year:", 
                                c(2011, 2012, 2013, 2014, 2015)),
@@ -183,9 +184,8 @@ shinyUI(tagList(
                   tags$h5(class = "context", "* some year may not have certain data which is not shown in the graph")
                 ),
                 mainPanel(
-                  
+                  # Can switch from graph to words and words to graph
                   tabsetPanel(
-                    
                     tabPanel("Graph",  plotlyOutput("dotPlot")),
                     tabPanel("Context",  tabsetPanel(
                       tabPanel("Male", tags$h5(class = "context", 
@@ -194,7 +194,7 @@ shinyUI(tagList(
                                                  textOutput("explain_female")))
                     ))
                   ),
-                  
+                  # A explanatory section for the graph generated 
                   tags$h2("Interpretation"),
                   tags$h5(class = "context", textOutput('rr_analysis'))
                 )
