@@ -30,30 +30,41 @@ suicide_text <- function(combined_df, state_one, state_two, gender_choice){
   state_one_min <- state_one_df %>% filter(Rate == min(Rate))
   state_one_min_row <- head(state_one_min,1)
   state_one_max <- state_one_df %>% filter(Rate == max(Rate))
-  state_two_df <- combined_dff %>% filter(States == state_two) %>% filter(Gender == gender_choice)
+  state_one_2000 <- state_one_df %>% filter(Year == "2000")
+  state_one_2010 <- state_one_df %>% filter(Year == "2010")
+  state_two_df <- combined_df %>% filter(States == state_two) %>% filter(Gender == gender_choice)
   state_two_min <- state_two_df %>% filter(Rate == min(Rate))
   state_two_max <- state_two_df %>% filter(Rate == max(Rate))
   state_one_max_row <- head(state_one_max,1)
   state_two_min_row <- head(state_two_min,1)
   state_two_max_row <- head(state_two_max,1)
+  state_two_2000 <- state_two_df %>% filter(Year == "2000")
+  state_two_2010 <- state_two_df %>% filter(Year == "2010")
   
-  if(gender_choice == "female"){
-    gender_analysis <- "Suicide rate of female in the United States is increasing from 2000 to 2010. The suicide rate in 2000 is 
-  4.01%, and the suicide rate in 2010 is 5.16%. In those 10 years, the general trend is increasing suicide rate except in 2003 and 2005.
+  if(gender_choice == "Female"){
+    gender_analysis <- "Suicide rate of female in the United States is increasing from 2000 to 2010. The suicide rate of U.S. in 2000 is 
+  4.01%, and the suicide rate in 2010 is 5.16%. In those 10 years, the general trend of suicide rate is increasing except in 2002 and 2004.
   In 2002 and 2004, female suicide rate slight decreases. 
   "
     
   }else{
-    gender_analysis <- "In general, suicide rate of male in the United States is increasing from 2000 to 2010. The suicide rate in 2000 for female is 
+    gender_analysis <- "In general, suicide rate of male in the United States is increasing from 2000 to 2010. The suicide rate of U.S. in 2000 for male is 
   17.1%, and the suicide rate in 2010 is 19.94%. However, the sucide rate decreases in 2002. From 2003 to 2006, the suicide rate slight increases
   among male, but the increase is relatively small compared to any other time period between 2000 and 2010."
     
   }
   
-  paste("The graph above shows the suicide rate of ", gender_choice, " in ", state_one, " and",state_two, gender_analysis)
+  output_text <- paste("The graph above shows the suicide rate of ", gender_choice, " in ", state_one, " ,",state_two, "and United States as whole. Let's start with 
+        the United States stats.", gender_analysis, " Focusing on ", state_one, ", the suicide rate in 2000 is ", state_one_2000$Rate, "%, and the
+        sucide rate in 2010 is ", state_one_2010$Rate,"%. The highest suicide rate happened in ", state_one_max$Year, ", and the suicide rate is ", 
+        state_one_max_row$Rate, "%. The lowest suicide rate happened in ", state_one_min$Year, ", and the suicide rate is ", state_one_min_row$Rate,
+        "%. For ", state_two, ", the suicide rate trend is quite different. In 2000, the suicide rate of ", state_two, " is ", state_two_2000$Rate, "%,
+        and the sucide rate in 2010 is ", state_two_2010$Rate, "%. The highest sucide rate happened in ", state_two_max$Year, " with a suicide rate of ", 
+        state_two_max_row$Rate, "%. The lowest suicide rate happened in ", state_two_min$Year, ", and the suicide rate is ", state_two_min_row$Rate, "%. The state suicide rate trend and 
+        national suicide rate trend have different patterns. We want to explore both internal and external factors associated with depressing and suicide. More information about risk 
+        factors could be found on later tabs.")
   
+  output_text
 }
-
-
 
 

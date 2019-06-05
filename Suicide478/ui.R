@@ -57,17 +57,12 @@ shinyUI(tagList(
                                width = '200px'),
                    selectInput('region2', 
                                label = h3('Select Second State'),
-                               choices = state_list,
+                               choices = state_list,selected = "California",
                                width = '200px'),
                    selectInput('gender', 
                                label = h3('Select a Gender'),
                                choices = gender_list,
-                               width = '200px'),
-                   tags$br(),
-                   tags$h3("Description"),
-                   tags$h5(class = "context",
-                           "With this interactive bar chart, you can explore the"),
-                   tags$h5(class = "context", "1. Set the decade to 2010-2017")
+                               width = '200px')
                    
                  ),
                  mainPanel(
