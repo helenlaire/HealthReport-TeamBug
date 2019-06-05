@@ -234,7 +234,7 @@ health expenditure in a given year, calculated in national currency units in cur
                        id = 'subpanels1',
                        tabPanel(
                          "Line Plot",
-                         plotOutput("years_factors_plot", width = "100%"),
+                         plotlyOutput("years_factors_plot", width = "100%"),
                          tags$br(),
                          tags$h6(textOutput("risk_factor_text")),
                          tags$h6(textOutput("year_text")),
