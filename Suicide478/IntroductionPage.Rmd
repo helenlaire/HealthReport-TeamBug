@@ -67,7 +67,7 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 
 **Daisy**
 
-**Claire Zhang**
+**Claire Zhang**: A sophmore student major in Finance & Supply Chain, trying to get into info. Mainly did overall trend analysis
 
 ---
 
@@ -75,7 +75,7 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 
 **Overall Trend**
 
-* The first tab includes information about suicide rate in all states in the United States, and how the rate differs between female and male from 2000 to 2010. The data was accessed from Center for Disease Control and Prevention. From this data, we want to study the overall trend of suicide in the United States.
+* The first tab includes information about suicide rate in all states in the United States, and how the rate differs between female and male from 2000 to 2010. The data was accessed from [Center for Disease Control and Prevention](https://wonder.cdc.gov/mcd-icd10.html). From this data, we want to study the overall trend of suicide in the United States.
 
 **Worldwide Statistics**
 
