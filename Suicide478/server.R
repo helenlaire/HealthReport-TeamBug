@@ -8,11 +8,10 @@
 #
 
 library(shiny)
-source("../External_Factors/carol_analysis.R")
-external <- read.csv(file = "../External_Factors/data/prepare_data.csv")
+source("External_Factors/carol_analysis.R")
+external <- read.csv(file = "External_Factors/data/prepare_data.csv")
 source("../Overall-Claire/analysis.R")
 combined_df <- read.csv(file = "../Overall-Claire/data/combined.csv")
-
 source("Prevention-Mengjiao/prevention_analysis.R")
 
 

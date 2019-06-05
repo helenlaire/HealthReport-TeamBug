@@ -108,13 +108,34 @@ shinyUI(tagList(
                          step:"),
                  tags$h5(class = "context", "1. Use above panel to select the external factor you want to
                          explore"),
-                 tags$h3("Interpretation"),
-                 tags$h5(class = "context", textOutput('interp'))
+                 tags$h3("External Factors"),
+                 tags$h5(class = "context",
+                   "GDP per capita: GDP per capita is a measure of a country's economic output that accounts 
+                   for its number of people. It divides the country's gross domestic product by its total 
+                   population. That makes it the best measurement of a country's standard of living. 
+                   It tells you how prosperous a country feels to each of its citizens."
+                 ),
+                 tags$br(),
+                 tags$h5(class = "context",
+                   "Health Expenditure: Total expenditure on health is the sum of general government health expenditure and private
+health expenditure in a given year, calculated in national currency units in current prices. Health Expenditure
+                   of a country also reflects the avaliable medical resources level and the development of 
+                   health care system in a country."
+                 ),
+                 tags$br(),
+                 tags$h5(class = "context",
+                         "Unemployment Rate: The unemployment rate is defined as the percentage of unemployed workers in the 
+                         total labor force. Workers are considered unemployed if they currently do not work, 
+                         despite the fact that they are able and willing to do so.")
+                 
+                 
               ),
               mainPanel(
                  plotOutput("external_plot",
                             width = "800px", height = "600px"
-                 )
+                 ),
+                 tags$h3("Interpretation"),
+                 tags$h5(class = "context", textOutput('interp'))
               )
              )
             ),
