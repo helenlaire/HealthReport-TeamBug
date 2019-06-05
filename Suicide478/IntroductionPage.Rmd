@@ -99,7 +99,7 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 ---
 
 ### <span style="font-family:Papyrus; font-size:1em;">Group Members</span> 
-**Mengjiao Li**: A junior student major in Informatics and Psychology. Love animals, esp. cats! Mainly did the Protective Factor Section
+**Mengjiao Li**: A junior student major in Informatics and Psychology. I am passionate about raising attention to psychological disorders, and would like to achieve my goal through data visualizations and informatics tools. Love animals, esp. cats! Mainly did the Protective Factor Section
 
 **Chuqian Yin**: A junior student major in Informatics, has huge enthuastics in data analysis and data visualization, mainly did the External Factor Section.
 

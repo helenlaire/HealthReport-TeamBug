@@ -213,7 +213,8 @@ shinyUI(tagList(
                
                   # brief description of the tab
                   tags$h5("In this section, we are exploring six possible protective factors: 'availability health care', 'affordability of health care', 'Positive physical development - Exercise', 'Education', 'Emotional support', 'Degree of Life Satisfaction'. 
-                           These factors are carefully selected based on past literatures and availability of data. Our data come from Behavior Risk Factor Surveillance System from 2011 to 2015 and wrangled through package of survey design.
+                           These factors are carefully selected based on past literatures and availability of data. Our data come from Behavior Risk Factor Surveillance System from 2011 to 2015 and wrangled through package of 'svydesign'. The package is chosen in order to 
+                           correctly weight the data and output percentage that each group experienced. It is further combined through R into smaller dataset that this application is using.
                            Since it is impossible to experimentally measure the causation effect of factors on suicide due to ethical reasons, the factors are instead associated with reported days of mental health feeling not good, as it often predicts depression, anxiety
                             disorder and many other mental illness. Users are able to explore their interested protective factors by seeing how it's association with mental health has changed across years. To interact with the system, 
                            users could first choose their interested protective factor, then check their interested years.

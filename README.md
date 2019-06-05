@@ -4,6 +4,8 @@ by Team Bug
 
 Author: Chuqian Yin, Claire Zhang, Yu Du, Mengjiao Li
 
+[Link to Shiny App](https://lmj0328.shinyapps.io/Suicide478/)
+
 
 ## Project Description
 ### Purpose of Study
