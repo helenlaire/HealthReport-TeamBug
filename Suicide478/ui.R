@@ -82,11 +82,22 @@ shinyUI(tagList(
                "Worldwide Statistics",
                titlePanel(tags$div(tags$h1(class = "Title",
                                            "Worldwide Statistics: External Factors"))),
+               tags$h5("In this section, we are exploring three possible external factors, 
+                       GDP per capita, Health expenditure, and Unemployment rate which may affect 
+                       suicide rates.  To see if there is any relationship or correlation between 
+                       these possible external factors and suicide rates at the national level. 
+                       We use the mean suicide rates from 1985 to 2010 for each country, 
+                       mean GDP per capita from 1985 to 2010 for each country, mean unemployment rates 
+                       from 2010 to 2014 and mean health expenditure from 1995 to 2010 as indicators to 
+                       do the analysis.  You can do this in one simple
+                       step: Use below panel to select the external factor you want to
+                         explore!"),
+               
                sidebarLayout(
                  
                  sidebarPanel(
                    selectInput('external_factors', 
-                                label = h3('Choose An Possible External Factor!'),
+                                label = h2('Choose An Possible External Factor!'),
                   choices = list(
                     'GDP' = 'GDP',
                     'Health Expenditure' = 'Health',
@@ -95,36 +106,20 @@ shinyUI(tagList(
                   width = '200px'
                  ),
                  tags$br(),
-                 tags$h3("Description"),
-                 tags$h5(class = "context",
-                         "In this section, we are exploring three possible external factors, 
-                          GDP per capita, Health expenditure, and Unemployment rate which may affect 
-                          suicide rates.  To see if there is any relationship or correlation between 
-                          these possible external factors and suicide rates at the national level. 
-                          We use the mean suicide rates from 1985 to 2010 for each country, 
-                          mean GDP per capita from 1985 to 2010 for each country, mean unemployment rates 
-                          from 2010 to 2014 and mean health expenditure from 1995 to 2010 as indicators to 
-                          do the analysis.  You can do this in one simple
-                         step:"),
-                 tags$h5(class = "context", "1. Use above panel to select the external factor you want to
-                         explore"),
-                 tags$h3("External Factors"),
-                 tags$h5(class = "context",
-                   "GDP per capita: GDP per capita is a measure of a country's economic output that accounts 
+                 tags$h2("External Factors"),
+                 tags$h5("GDP per capita: GDP per capita is a measure of a country's economic output that accounts 
                    for its number of people. It divides the country's gross domestic product by its total 
                    population. That makes it the best measurement of a country's standard of living. 
                    It tells you how prosperous a country feels to each of its citizens."
                  ),
                  tags$br(),
-                 tags$h5(class = "context",
-                   "Health Expenditure: Total expenditure on health is the sum of general government health expenditure and private
+                 tags$h5("Health Expenditure: Total expenditure on health is the sum of general government health expenditure and private
 health expenditure in a given year, calculated in national currency units in current prices. Health Expenditure
                    of a country also reflects the avaliable medical resources level and the development of 
                    health care system in a country."
                  ),
                  tags$br(),
-                 tags$h5(class = "context",
-                         "Unemployment Rate: The unemployment rate is defined as the percentage of unemployed workers in the 
+                 tags$h5("Unemployment Rate: The unemployment rate is defined as the percentage of unemployed workers in the 
                          total labor force. Workers are considered unemployed if they currently do not work, 
                          despite the fact that they are able and willing to do so.")
                  
@@ -134,7 +129,7 @@ health expenditure in a given year, calculated in national currency units in cur
                  plotOutput("external_plot",
                             width = "800px", height = "600px"
                  ),
-                 tags$h3("Interpretation"),
+                 tags$h2("Interpretation"),
                  tags$h5(class = "context", textOutput('interp'))
               )
              )
