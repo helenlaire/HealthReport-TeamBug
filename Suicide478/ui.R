@@ -31,24 +31,23 @@ combined_list <- combined_df %>% filter(States != "United States")
 state_list <- unique(combined_list$States) 
 gender_list <- unique(combined_df$Gender)
 
-# Define UI for application that draws a histogram
 shinyUI(tagList(
-  navbarPage(theme = shinytheme("slate"),
-    titlePanel("Suicide"),
-    
+  headerPanel("Suicide Analysis"),
+  fluidPage(
+    theme = shinytheme("slate"),
     tabsetPanel(
-      type = "tabs",
-    tabPanel(
-      "Introduction",
-      h3("Purpose"),
-      p(purpose),
-      h3("Background Information"),
-      p(info),
-      h3("Data Description"),
-      p(data_one),
-      p(data_two),
-      p(data_three)
-    ),
+            #introduction
+            tabPanel(
+              "Introduction",
+              tags$h3("Purpose"),
+              tags$h5(purpose),
+              tags$h3("Background Information"),
+              tags$h5(info),
+              tags$h3("Data Description"),
+              tags$h5(data_one),
+              tags$h5(data_two),
+              tags$h5(data_three)
+            ),
     
     
              # Overall trend panel
@@ -251,5 +250,6 @@ health expenditure in a given year, calculated in national currency units in cur
                    )
                 )
              )
+    )
   )
-)))
+))
