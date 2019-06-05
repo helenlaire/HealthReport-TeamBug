@@ -3,25 +3,38 @@ library(shiny)
 
 shinyUI(fluidPage(
   
-  titlePanel("Risk Factors For Mental Health"),
-  h5("The graphs take a while to load...I will add a progress bar later"),
+  titlePanel("Risk Factors For Depressive Disorder"),
    
   sidebarLayout(
-    sidebarPanel(
-      selectInput("measure", "Select the desired risk factor of mental health:", 
-                  choices = list('Days felt down', 
-                                 'Days had trouble with sleep'))
-    ),
     
+    sidebarPanel(
+      radioButtons("year", "Select the year:", 
+                  c(2011, 2012, 2013, 2014, 2015)),
+      verbatimTextOutput("footnote"),
+      tags$head(tags$style(HTML("
+                            #footnote {
+                              font-size: 11px;
+                            }
+                            ")))
+    ),
     mainPanel(
-      conditionalPanel(
-        condition = "input.measure == 'Days felt down'",
-        plotOutput("distPlotDD")
-      ),
-      conditionalPanel(
-        condition = "input.measure == 'Days had trouble with sleep'",
-        plotOutput("distPlotDS")
-      )
+        plotOutput("dotPlot"),
+        tabsetPanel(
+          tabPanel("Male", verbatimTextOutput("explain_male"),
+                   tags$head(tags$style(HTML("
+                              #explain_male {
+                                font-size: 11px;
+                              }
+                              ")))),
+          tabPanel("Female", verbatimTextOutput("explain_female"),
+                   tags$head(tags$style(HTML("
+                                             #explain_female {
+                                             font-size: 11px;
+                                             }
+                                             "))))
+          
+        )
     )
+    
   )
 ))
