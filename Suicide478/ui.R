@@ -27,7 +27,8 @@ protective_factor_list <- list("Health Care Coverage" = "HLTHPLN1",
                                "Education Level" = "EDUCA")
 
 combined_df <- read.csv(file = "Overall-Claire/data/combined.csv")
-state_list <- unique(combined_df$States)
+combined_list <- combined_df %>% filter(States != "United States")
+state_list <- unique(combined_list$States) 
 gender_list <- unique(combined_df$Gender)
 
 # Define UI for application that draws a histogram
@@ -72,7 +73,9 @@ shinyUI(tagList(
                  mainPanel(
                    plotlyOutput("trend_graph",
                               width = "800px", height = "600px"
-                   )
+                   ),
+                   tags$h3("Interpretation"),
+                   tags$h5(class = "context", textOutput('overall'))
                  )
                )
              ),
