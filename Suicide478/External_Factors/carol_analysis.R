@@ -11,7 +11,7 @@ create_plot <- function(df, select){
     p <- ggplot(df, aes(x=suicide_rate, y=gdp)) + 
       geom_point()+
       geom_smooth(method=lm)+
-      labs(title = 'The relationship between GDP and Suicide Rate', x = 'Suicide Rate(Unit:Percentage)',
+      labs(title = 'The relationship between GDP and Suicide Rate', x = 'Suicide Rate(Unit:Numbers per 100k Population)',
            y = 'GDP Per Capita(Unit:US$)')
     
 #Create plot when users choose Health
@@ -19,7 +19,7 @@ create_plot <- function(df, select){
     p <- ggplot(df, aes(x=suicide_rate, y=health_spend)) + 
       geom_point()+
       geom_smooth(method=lm)+
-      labs(title = 'The relationship between Health Expenditure per Capita and Suicide Rate', x = 'Suicide Rate(Unit:Percentage)',
+      labs(title = 'The relationship between Health Expenditure per Capita and Suicide Rate', x = 'Suicide Rate(Unit:Numbers per 100k Population)',
            y = 'Health Expenditure per capita(Unit:US$)')
     
 #Create plot when users choose Unemployment
@@ -27,7 +27,7 @@ create_plot <- function(df, select){
     p <- ggplot(df, aes(x=suicide_rate, y=unemployment)) + 
       geom_point()+
       geom_smooth(method=lm)+
-      labs(title = 'The relationship between Unemployment Rate and Suicide Rate', x = 'Suicide Rate(Unit:Percentage)',
+      labs(title = 'The relationship between Unemployment Rate and Suicide Rate', x = 'Suicide Rate(Unit:Numbers per 100k Population)',
            y = 'Unemployment Rate(Unit:Percentage)')
   }
   
