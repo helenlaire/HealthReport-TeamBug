@@ -256,7 +256,7 @@ shinyUI(tagList(
                        tabPanel(
                          "Line Plot",
                          
-                         # render a line plot for observing associations between protective factors and mental illness
+                         # render a line plot for observing associations between protective factors and mental illness on when year is selected
                          conditionalPanel("input.choose_year != 0", plotlyOutput("years_factors_plot", width = "100%")),
                          tags$br(),
                          
