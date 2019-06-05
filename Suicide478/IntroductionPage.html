@@ -220,18 +220,12 @@ $(document).ready(function () {
 <p>There are many pieces of psychology research that have studied the area, and here are three recent researches. First of all, in 2018, Franklin and his fellow researchers attempt to study the suicide causes by creating suicide scenarios in virtual reality [3]. Participants are given choice based instructions in the laboratory and are exposed to multiple causes of suicide. Through observing factors’ effects on VR suicide rates, the researchers are able to tentatively investigate the cause of suicide, which re suicidal desire, agitation, and prior suicidality as the common factors. Their work brought up a new approach for assessing risk factors and prevention strategies of suicide. Second, the World Health Organization develops an action plan in 2013-2020, providing an overview of the topic aiming to increase public awareness of suicide prevention methods [4]. In 2014, Matsubayashi and her fellow researchers studied the effect of public awareness campaigns on suicide. By comparing suicide counts before and after a city-wide campaign in Japan, they found public awareness of depression promote care-seeking behaviors and was negatively correlate with the suicide rate. Although the underlying mechanism remains unclear, it is clear that the campaign reduces the suicide rate. Their researches brought up the importance of stimulating public awareness, as more frequent distributions associate with decrease number of suicide [5]. Third, Colucci and Lester, in 2013, studied the external systems’ impacts on suicide, especially for culture. They point out that 90% of people in US commit suicide due to mental disorder with a majority of elderly men, versus in China, young women has a higher rate of suicide. In Japan, suicide could mean an act of honor under certain circumstances, while Muslims see suicide an unforgivable act [6]. Therefore, seeing the great demographic differences among cultures, it is important to researchers to see the role of cultural context and use it a part of guiding work on understanding suicide. Based on the previous work and combining data from studies, our group wishes to bring a universal view to the general public on how to avoid risks behaviors and appropriately engage in prevention strategies.</p>
 <hr />
 </div>
-<div id="group-members" class="section level3">
-<h3><span style="font-family:Papyrus; font-size:1em;">Group Members</span></h3>
-<p><strong>Mengjiao Li</strong>: A junior student major in Informatics and Psychology. Love animals, esp. cats! Mainly did the Protective Factor Section</p>
-<p><strong>Chuqian Yin</strong>: A junior student major in Informatics, has huge enthuastics in data analysis and data visualization, mainly did the External Factor Section.</p>
-<p><strong>Daisy</strong></p>
-<p><strong>Claire Zhang</strong></p>
-<hr />
-</div>
 <div id="data-source" class="section level3">
 <h3><span style="font-family:Papyrus; font-size:1em;">Data Source</span></h3>
 <p><strong>Overall Trend</strong></p>
-<p>The first tab includes information about suicide rate in all states in the United States, and how the rate differs between female and male from 2000 to 2010. The data was accessed from Center for Disease Control and Prevention. From this data, we want to study the overall trend of suicide in the United States.</p>
+<ul>
+<li>The first tab includes information about suicide rate in all states in the United States, and how the rate differs between female and male from 2000 to 2010. The data was accessed from <a href="https://wonder.cdc.gov/mcd-icd10.html">Center for Disease Control and Prevention</a>. From this data, we want to study the overall trend of suicide in the United States.</li>
+</ul>
 <p><strong>Worldwide Statistics</strong></p>
 <ul>
 <li>We use data collected information about countries’ <strong>GDP</strong> and <strong>prevalence of depression</strong> from 1985 and 2016. The data was accessed from <a href="https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016">Kaggle</a>. This compiled dataset pulled from four other datasets linked by time and place, and was built to find signals correlated to increased suicide rates among different cohorts globally, across the socio-economic spectrum. The orginal data sources include data from <a href="http://hdr.undp.org/en/indicators/137506">UN Development Program</a>, <a href="http://databank.worldbank.org/data/source/world-development-indicators#">World Bank</a>, <a href="https://www.kaggle.com/szamil/suicide-in-the-twenty-first-century/notebook">Suicide in the Twenty-First Century</a> and <a href="http://www.who.int/mental_health/suicide-prevention/en/">World Health Orginzation</a>. We will use this data to study the relationship between depression and GDP, and answer the question that “Worldwide, how do external factors such as GDP, impact populations’ mental health, transfer to suicide rate?”.</br></li>
@@ -239,12 +233,20 @@ $(document).ready(function () {
 <li>We use data collected information about worldwide <strong>unemployment rates</strong> (modeled ILO estimate) from 2010 to 2014. As some suicide cases happened before are very likely related to losing a job or difficulty of finding a job, we use this data to explore if unemployment rate in a country is related to suicide rates. The data was accessed from <a href="https://www.kaggle.com/sovannt/world-bank-youth-unemployment">Kaggle</a>.</li>
 </ul>
 <p><strong>Risk Factors of Depression</strong></p>
-<p><strong>Protective Factors of Mental Health: The fourth</strong></p>
+<p><strong>Protective Factors of Mental Health</strong> * We use data collected information about a variety of risk factor and its association with mental health to analyze and visualize how each factor may act as a protection for mental illness. More specifically, we chose six factors: “Health Care Coverage”, “Affordability of Medical Cost”, “Exercises”, “Frequency of getting emotional support”, “Degree of Life Satisfaction”,“Education Level” that psychologists and public health practictioners have predicted might have an impact on the mental health and compared it with the response to the question - “Number of days reported mental health not good”. The data was officially collected by <a href="https://www.cdc.gov/brfss/annual_data/2015/pdf/overview_2015.pdf">The Behavioral Risk Factor Surveillance System (BRFSS)</a>, a nation’s premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. It is stored on <a href="https://www.kaggle.com/cdc/behavioral-risk-factor-surveillance-system#2012.csv">Kaggle</a> and wrangled based on its <a href="https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf">codebook</a> and <a href="https://www.cdc.gov/brfss/questionnaires/modules/category2015.htm">category module</a>.</p>
 <hr />
 </div>
 <div id="packages-use" class="section level3">
 <h3><span style="font-family:Papyrus; font-size:1em">Packages Use</span></h3>
 <p><code>shinythemes</code> <code>shiny</code> <code>markdown</code> <code>ggplot2</code> <code>dplyr</code> <code>DT</code> <code>urbnmapr</code> <code>tidyverse</code> <code>plotly</code> <code>svydesign</code></p>
+<hr />
+</div>
+<div id="group-members" class="section level3">
+<h3><span style="font-family:Papyrus; font-size:1em;">Group Members</span></h3>
+<p><strong>Mengjiao Li</strong>: A junior student major in Informatics and Psychology. Love animals, esp. cats! Mainly did the Protective Factor Section</p>
+<p><strong>Chuqian Yin</strong>: A junior student major in Informatics, has huge enthuastics in data analysis and data visualization, mainly did the External Factor Section.</p>
+<p><strong>Daisy</strong></p>
+<p><strong>Claire Zhang</strong>: A sophmore student major in Finance &amp; Supply Chain, trying to get into info. Mainly did overall trend analysis</p>
 <hr />
 </div>
 <div id="citation" class="section level3">

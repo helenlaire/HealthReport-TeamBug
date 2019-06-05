@@ -64,7 +64,7 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 
 **Overall Trend**
 
-* The first tab includes information about suicide rate in all states in the United States, and how the rate differs between female and male from 2000 to 2010. The data was accessed from Center for Disease Control and Prevention. From this data, we want to study the overall trend of suicide in the United States.
+* The first tab includes information about suicide rate in all states in the United States, and how the rate differs between female and male from 2000 to 2010. The data was accessed from [Center for Disease Control and Prevention](https://wonder.cdc.gov/mcd-icd10.html). From this data, we want to study the overall trend of suicide in the United States.
 
 **Worldwide Statistics**
 
@@ -76,9 +76,9 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 
 
 **Protective Factors of Mental Health**
+
 * We use data collected information about a variety of risk factor and its association with mental health to analyze and visualize how each factor may act as a protection for mental illness. More specifically, we chose six factors: "Health Care Coverage", "Affordability of Medical Cost", "Exercises", "Frequency of getting emotional support", "Degree of Life Satisfaction","Education Level" that psychologists and public health practictioners have predicted might have an impact on the mental health and compared it with the response to the question - "Number of days reported mental health not good". The data was officially collected by [The Behavioral Risk Factor Surveillance System (BRFSS)](https://www.cdc.gov/brfss/annual_data/2015/pdf/overview_2015.pdf), a nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. It is stored on [Kaggle](https://www.kaggle.com/cdc/behavioral-risk-factor-surveillance-system#2012.csv) and wrangled based on its [codebook](https://www.cdc.gov/brfss/annual_data/2015/pdf/codebook15_llcp.pdf) and [category module](https://www.cdc.gov/brfss/questionnaires/modules/category2015.htm). 
  
-
 ---
 
 ### <span style="font-family:Papyrus; font-size:1em">Packages Use</span>
@@ -97,13 +97,13 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 ---
 
 ### <span style="font-family:Papyrus; font-size:1em;">Group Members</span> 
-**Mengjiao Li**: A UW student major in Informatics and Psychology. Love animals, esp. cats! Mainly did the Protective Factor Section
+**Mengjiao Li**: A junior student major in Informatics and Psychology. Love animals, esp. cats! Mainly did the Protective Factor Section
 
 **Chuqian Yin**: A junior student major in Informatics, has huge enthuastics in data analysis and data visualization, mainly did the External Factor Section.
 
 **Daisy**
 
-**Claire Zhang**
+**Claire Zhang**: A sophmore student major in Finance & Supply Chain, trying to get into info. Mainly did overall trend analysis
 
 ---
 

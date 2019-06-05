@@ -18,10 +18,11 @@ source("Prevention-Mengjiao/prevention_analysis.R")
 # Define server logic required to draw a histogram
 shinyServer(function(input, output, session) {
 
-  ## Claire's Code
+  ## Claire's Code - Overall trend plot
+  # render the plot for overall trend
   output$trend_graph <- renderPlotly({
     return(overall_trend(combined_df, input$region1, input$region2,input$gender))
-  })  
+  })  # render the interpretation
   output$overall <- renderText({
     return(suicide_text(combined_df, input$region1, input$region2,input$gender))
   })
@@ -104,7 +105,7 @@ shinyServer(function(input, output, session) {
   })
   
   
-  ## Mengjiao's Code
+  ## Mengjiao's Code - Protective Factors
   
   ### render the protective factor plot
   output$years_factors_plot <- renderPlotly({
