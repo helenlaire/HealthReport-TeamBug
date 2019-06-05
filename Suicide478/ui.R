@@ -151,44 +151,54 @@ health expenditure in a given year, calculated in national currency units in cur
             ),
              
              # Daisy's Panel
-             tabPanel(
-               "Risk Factors of Depression",
-               
-               titlePanel("Risk Factors For Depressive Disorder"),
-               
-               sidebarLayout(
-                 
-                 sidebarPanel(
-                   radioButtons("year", "Select the year:", 
-                                c(2011, 2012, 2013, 2014, 2015)),
-                   tags$h4("Risk Factors"),
-                   tags$h5(class = "context", "College: college students who have been studying for 1 to 3 years"),
-                   tags$h5(class = "context", "Divorce: people who are divorced"), 
-                   tags$h5(class = "context", "Limited Activities: people who have limited activities due to health problems"),
-                   tags$h5(class = "context", "Multiple Cancer: people who have three or more cancers"),
-                   tags$h5(class = "context", "No Job: people who are out of work for 1 year or more"), 
-                   tags$h5(class = "context", "* some year may not have certain data which is not shown in the graph")
-                   ),
-                 mainPanel(
-                   plotOutput("dotPlot"),
-                   tabsetPanel(
-                     tabPanel("Male", verbatimTextOutput("explain_male"),
-                              tags$head(tags$style(HTML("
-                                                        #explain_male {
-                                                        font-size: 11px;
-                                                        }
-                                                        ")))),
-                     tabPanel("Female", verbatimTextOutput("explain_female"),
-                              tags$head(tags$style(HTML("
-                                                        #explain_female {
-                                                        font-size: 11px;
-                                                        }
-                                                        "))))
-                     
-                              )
-                  )
+            
+            tabPanel(
+              "Risk Factors of Depression",
+              titlePanel(tags$div(tags$h1(class = "Title",
+                                          "US Statistics: Risk Factors For Depressive Disorder"))),
+              tags$h5("In this section, we are exploring three to five risk factors of
+                      depressive disorder to see what exposure might be highly correlated to depression
+                      at the US level across years from 2011 to 2015 and sex. 
+                      We calculated the relative risks of depression for college students who have 
+                      been studying for 1 to 3 years,
+                      people who are divorced, people who have limited activities due to health problems,
+                      people who have three or more cancers and people who are out of work for 1 year or more.
+                      Use the panel below to select the year you want to
+                      explore!"),
+              
+              titlePanel("Risk Factors For Depressive Disorder"),
+              
+              sidebarLayout(
+                
+                sidebarPanel(
+                  radioButtons("year", "Select the year:", 
+                               c(2011, 2012, 2013, 2014, 2015)),
+                  tags$h4("Risk Factors"),
+                  tags$h5(class = "context", "College: college students who have been studying for 1 to 3 years"),
+                  tags$h5(class = "context", "Divorce: people who are divorced"), 
+                  tags$h5(class = "context", "Limited Activities: people who have limited activities due to health problems"),
+                  tags$h5(class = "context", "Multiple Cancer: people who have three or more cancers"),
+                  tags$h5(class = "context", "No Job: people who are out of work for 1 year or more"), 
+                  tags$h5(class = "context", "* some year may not have certain data which is not shown in the graph")
+                ),
+                mainPanel(
+                  
+                  tabsetPanel(
+                    
+                    tabPanel("Graph",  plotlyOutput("dotPlot")),
+                    tabPanel("Context",  tabsetPanel(
+                      tabPanel("Male", tags$h5(class = "context", 
+                                               textOutput("explain_male"))),
+                      tabPanel("Female", tags$h5(class = "context", 
+                                                 textOutput("explain_female")))
+                    ))
+                  ),
+                  
+                  tags$h2("Interpretation"),
+                  tags$h5(class = "context", textOutput('rr_analysis'))
+                )
               )
-             ),
+              ),
              
              # Mengjiao's Panel
              tabPanel(

@@ -27,18 +27,21 @@ shinyServer(function(input, output, session) {
     return(suicide_text(combined_df, input$region1, input$region2,input$gender))
   })
   
+  # Daisy's code
+  
   # load the data 
   data <- reactive({
     data <- read.csv(paste0("data/", input$year, "_rr.csv"))
     data
   })
   
-  output$dotPlot <- renderPlot({
-    ggplot(data(), aes(y = Value, x = Metric, color = Sex)) +
+  output$dotPlot <- renderPlotly({
+    p <- ggplot(data(), aes(y = Value, x = Metric, color = Sex)) +
       geom_point() +
       xlab("Relative Risk Factors") +
       ylab("Relative Risk") +
       labs(title = "Relative Risk Analysis For Depressive Order")
+    ggplotly(p)
   })
   
   output$footnote <- renderPrint({
@@ -68,7 +71,7 @@ shinyServer(function(input, output, session) {
       sex = as.character(temp[i, ]$Sex)
       value = as.character(round(temp[i, ]$Value, 2))
       cat("The risk of developing depressive order was ", value, 
-          " times higher for ", metric, " than for those who weren't ", metric,"\n\n", sep = '') 
+          " times higher for ", metric, " than for those who weren't ", metric,"\n\n") 
     }
   } 
   
@@ -86,6 +89,19 @@ shinyServer(function(input, output, session) {
         ", the relative risks for depressive order for females are as followed: \n\n", sep = '')
     temp <- data() %>% filter(Sex == "Female")
     generatesText(temp)
+  })
+  
+  output$rr_analysis <- renderText({
+    paste("It is pretty clear that the Limited Activity is the most influential risk factor 
+          among these data points through out the years no matter which sex it concerns 
+          and it has greatly affected the males way more than the females in terms of 
+          the risk of getting depression.", "Generally speaking, among these risk factors, 
+          males seem to be affected more than females especially by having no job for 1 to 
+          3 years and limited activities. Yet if we look at having multiple cancers in year 
+          2014 as a factor, females are affected way more than males. ", 
+          "For the most of the times, when we look at college students who have studied for 
+          1 to 3 years and divorced people, the relative risk for getting a depression is 
+          close across two sexes.  ")
   })
   
   
