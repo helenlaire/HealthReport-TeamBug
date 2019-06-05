@@ -33,12 +33,10 @@ This guide will be useful for anyone who would like to have a better understandi
 Tab functions: 
 Our guide will present an organize visualization of data that helps answer the following questions: 
 
-1) How does suicide differ in gender? How does suicide differ across counties in US?</br>
-2) What is the trend for suicide worldwide? What is it's associations with other external factors?</br>
-3) What are the risk factors for depression? </br>
-4) What are the protective factors for mental health?
-
----
+1. How does suicide differ in gender? How does suicide differ across counties in US?</br>
+2. What is the possible external factor related to suicide rate in national level? Higher living standard means lower suicide rates? Better health system means lower suicide rates? Higher unemployment rates means higher suicide rates?
+3. What are the risk factors for depression? </br>
+4. What are the protective factors for mental health?
 
 ### <span style="font-family:Papyrus; font-size:1em;">Background Research</span>
 There are many pieces of psychology research that have studied the area, and here are three recent researches. 
@@ -62,15 +60,35 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 
 ---
 
-### <span style="font-family:Papyrus; font-size:1em;">Data Resources</span>
-1) Overall Trend: The first tab includes information about suicide rate in all states in the United States, and how the rate differs between female and male from 2000 to 2010. The data was accessed from Center for Disease Control and Prevention. From this data, we want to study the overall trend of suicide in the United States.
+### <span style="font-family:Papyrus; font-size:1em;">Group Members</span> 
+**Mengjiao Li**: A junior student major in Informatics and Psychology. Love animals, esp. cats! Mainly did the Protective Factor Section
 
-2) Worldwide Statistics
+**Chuqian Yin**: A junior student major in Informatics, has huge enthuastics in data analysis and data visualization, mainly did the External Factor Section.
+
+**Daisy**
+
+**Claire Zhang**
+
+---
+
+### <span style="font-family:Papyrus; font-size:1em;">Data Source</span> 
+
+**Overall Trend**
+
+* The first tab includes information about suicide rate in all states in the United States, and how the rate differs between female and male from 2000 to 2010. The data was accessed from Center for Disease Control and Prevention. From this data, we want to study the overall trend of suicide in the United States.
+
+**Worldwide Statistics**
+
+* We use data collected information about countries’ **GDP** and **prevalence of depression** from 1985 and 2016. The data was accessed from [Kaggle](https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016). This compiled dataset pulled from four other datasets linked by time and place, and was built to find signals correlated to increased suicide rates among different cohorts globally, across the socio-economic spectrum. The orginal data sources include data from [UN Development Program](http://hdr.undp.org/en/indicators/137506), [World Bank](http://databank.worldbank.org/data/source/world-development-indicators#), [Suicide in the Twenty-First Century](https://www.kaggle.com/szamil/suicide-in-the-twenty-first-century/notebook) and [World Health Orginzation](http://www.who.int/mental_health/suicide-prevention/en/). We will use this data to study the relationship between depression and GDP, and answer the question that “Worldwide, how do external factors such as GDP, impact populations’ mental health, transfer to suicide rate? ”.</br>
+* We use data collected information about **per capita total expenditure on health expressed** at average exchange rate for that year in US$ at current prices from 1995 to 2010. We use health expenditure per capita for each country in this dataset as the indicator of avaliable meadical resource and health care system in a country to see if the avaliable medical resource is a determinant external factor to the suicide rate. The data was accessed from [Kaggle](https://www.kaggle.com/onlyricks/healthspending).</br>
+* We use data collected information about worldwide **unemployment rates** (modeled ILO estimate) from 2010 to 2014. As some suicide cases happened before are very likely related to losing a job or difficulty of finding a job, we use this data to explore if unemployment rate in a country is related to suicide rates. The data was accessed from [Kaggle](https://www.kaggle.com/sovannt/world-bank-youth-unemployment).
+
+**Risk Factors of Depression**
 
 
-3) Risk Factors of Depression
-
-4) Protective Factors of Mental Health: The fourth 
+**Protective Factors of Mental Health: The fourth**
+* We use data collected by 
+ 
 
 ---
 
@@ -85,16 +103,12 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 `urbnmapr`
 `tidyverse`
 `plotly`
+`svydesign`
 
 ---
 
 
-### <span style="font-family:Papyrus; font-size:1em;">Group Members</span> 
-Mengjiao Li, Chuqian Yin, Daisy, Claire Zhang
-
----
-
-### <span style="font-family:Papyrus; font-size:1em;">Source</span> 
+### <span style="font-family:Papyrus; font-size:1em;">Citation</span> 
 
 [1] Franklin, J., Huang, X., & Bastidas, D. (2018). Virtual reality suicide: Development of a translational approach for studying suicide causes. Behaviour Research and Therapy, Behaviour Research and Therapy, 12/2018.
 https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=TN_crossref10.1016/j.brat.2018.12.013&context=PC&vid=UW&search_scope=all&tab=default_tab&lang=en_US
@@ -104,4 +118,14 @@ https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=
 
 [3] United States. Congress. Senate. Committee on Appropriations. Subcommittee on Departments of Labor, Health Human Services, Education, Related Agencies. (2001). Suicide awareness and prevention : Hearing before a subcommittee of the Committee on Appropriations, United States Senate, One Hundred Sixth Congress, second session, special hearing, February 8, 2000, Washington, DC. (United States. Congress. Senate. S. hrg. ; 106-940). Washington: U.S. G.P.O. : For sale by the U.S. G.P.O., Supt. of Docs., Congressional Sales Office.
 https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=CP71173955390001451&context=L&vid=UW&search_scope=all&tab=default_tab&lang=en_US
+
+[4] Wasserman, D. (2016). Suicide : An unnecessary death (Second ed.). Oxford: Oxford University Press.
+https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=CP71246214310001451&context=L&vid=UW&search_scope=all&tab=default_tab&lang=en_US
+
+[5] Matsubayashi, Ueda, & Sawada. (2014). The effect of public awareness campaigns on suicides: Evidence from Nagoya, Japan. Journal of Affective Disorders, 152-154(1), 526-529.
+https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=TN_sciversesciencedirect_elsevierS0165-0327(13)00681-2&context=PC&vid=UW&search_scope=all&tab=default_tab&lang=en_US
+
+[6] Bell, C. (2014). Suicide and Culture: Understanding the Context. Journal Of Clinical Psychiatry, 75(6), E594.
+https://alliance-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=TN_wos000338458200008&context=PC&vid=UW&search_scope=all&tab=default_tab&lang=en_US
+
 
