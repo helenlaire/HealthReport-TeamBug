@@ -23,7 +23,9 @@ shinyServer(function(input, output, session) {
   output$trend_graph <- renderPlotly({
     return(overall_trend(combined_df, input$region1, input$region2,input$gender))
   })  
-  ## Daisy's Code
+  output$overall <- renderText({
+    return(suicide_text(combined_df, input$region1, input$region2,input$gender))
+  })
   
   # load the data 
   data <- reactive({
