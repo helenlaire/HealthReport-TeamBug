@@ -33,27 +33,58 @@ This guide will be useful for anyone who would like to have a better understandi
 Tab functions: 
 Our guide will present an organize visualization of data that helps answer the following questions: 
 
-1) How would a person fit into a county by their adjusted gross income? </br>
-2) What are the housing affordability compared across all counties by different years? </br>
-3) What is the rate of economic progression over the years by counties based on poverty rate? </br>
-4) Does the $15 minimum wage positively affect poverty rate?
+1) How does suicide differ in gender? How does suicide differ across counties in US?</br>
+2) What is the trend for suicide worldwide? What is it's associations with other external factors?</br>
+3) What are the risk factors for depression? </br>
+4) What are the protective factors for mental health?
 
 ---
 
-### <span style="font-family:Papyrus; font-size:1em;">Packages Use</span>
+### <span style="font-family:Papyrus; font-size:1em;">Background Research</span>
+There are many pieces of psychology research that have studied the area, and here are three recent researches. 
+First of all, in 2018, Franklin and his fellow researchers attempt to study the suicide causes by creating suicide scenarios in 
+virtual reality [3]. Participants are given choice based instructions in the laboratory and are exposed to multiple causes of 
+suicide. Through observing factors’ effects on VR suicide rates, the researchers are able to tentatively investigate the cause 
+of suicide, which re suicidal desire, agitation, and prior suicidality as the common factors. Their work brought up a new 
+approach for assessing risk factors and prevention strategies of suicide. Second, the World Health Organization develops an 
+action plan in 2013-2020, providing an overview of the topic aiming to increase public awareness of suicide prevention methods 
+[4]. In 2014, Matsubayashi and her fellow researchers studied the effect of public awareness campaigns on suicide. By comparing 
+suicide counts before and after a city-wide campaign in Japan, they found public awareness of depression promote care-seeking 
+behaviors and was negatively correlate with the suicide rate. Although the underlying mechanism remains unclear, it is clear 
+that the campaign reduces the suicide rate. Their researches brought up the importance of stimulating public awareness, as more 
+frequent distributions associate with decrease number of suicide [5]. Third, Colucci and Lester, in 2013, studied the external 
+systems’ impacts on suicide, especially for culture. They point out that 90% of people in US commit suicide due to mental 
+disorder with a majority of elderly men, versus in China, young women has a higher rate of suicide. In Japan, suicide could 
+mean an act of honor under certain circumstances, while Muslims see suicide an unforgivable act [6]. Therefore, seeing the 
+great demographic differences among cultures, it is important to researchers to see the role of cultural context and use it 
+a part of guiding work on understanding suicide. Based on the previous work and combining data from studies, our group wishes 
+to bring a universal view to the general public on how to avoid risks behaviors and appropriately engage in prevention strategies.
+
+---
+
+### <span style="font-family:Papyrus; font-size:1em;">Data Resources</span>
+1) Overall Trend: The first tab includes information about suicide rate in all states in the United States, and how the rate differs between female and male from 2000 to 2010. The data was accessed from Center for Disease Control and Prevention. From this data, we want to study the overall trend of suicide in the United States.
+
+2) Worldwide Statistics
+
+
+3) Risk Factors of Depression
+
+4) Protective Factors of Mental Health: The fourth 
+
+---
+
+### <span style="font-family:Papyrus; font-size:1em">Packages Use</span>
 
 `shinythemes`
 `shiny`
 `markdown`
 `ggplot2`
 `dplyr`
-`usmap`
-`lubridate`
+`DT`
 `urbnmapr`
 `tidyverse`
-`rsconnect`
 `plotly`
-`RColorBrewer`
 
 ---
 
