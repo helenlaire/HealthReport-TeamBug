@@ -101,7 +101,7 @@ to bring a universal view to the general public on how to avoid risks behaviors 
 
 **Chuqian Yin**: A junior student major in Informatics, has huge enthuastics in data analysis and data visualization, mainly did the External Factor Section.
 
-**Daisy**
+**Daisy**: A junior informatics student and a fast, reliable and dedicated data analyst who is ready to solve real-life problems through implementing ETL pipeline for data collection and preprocessing, creating interactive data visualization interfaces and applying A/B testing, modeling to help interpret raw data and deliver strategic recommendations. 
 
 **Claire Zhang**: A sophmore student major in Finance & Supply Chain, trying to get into info. Mainly did overall trend analysis
 
