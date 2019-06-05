@@ -40,14 +40,22 @@ shinyUI(tagList(
                includeCSS('style.css'),
                titlePanel(tags$div(tags$h1(class = "Title",
                                            "Intentional Self-Harm Trend"))),
+               tags$h5("In this section, we focus on the U.S. suicide trend across years. We want to study the suicide 
+                       rate trend in different states in the U.S.: how the suicide rate for a specific state changes 
+                       from 2000 to 2010, how is the suicide rate of a state compared to the national suicide rate, 
+                       and how the suicide rates in two different states comparing to each other, and how the suicide 
+                       rate trend differ between female and male. The data was accessed from Center for Disease Control 
+                       and Prevention. It includes information about suicide rate in all states in the U.S. from 2000 to 2010. 
+                       In the panel below, you can choose two states in the U.S., choose either female or male, and the graph 
+                       below will show you the trend in your selected states."),
                sidebarLayout(
                  sidebarPanel(
                    selectInput('region1', 
-                               label = h3('Select a State'),
+                               label = h3('Select First State'),
                                choices = state_list,
                                width = '200px'),
                    selectInput('region2', 
-                               label = h3('Select a State'),
+                               label = h3('Select Second State'),
                                choices = state_list,
                                width = '200px'),
                    selectInput('gender', 
@@ -62,7 +70,7 @@ shinyUI(tagList(
                    
                  ),
                  mainPanel(
-                   plotOutput("trend_graph",
+                   plotlyOutput("trend_graph",
                               width = "800px", height = "600px"
                    )
                  )
