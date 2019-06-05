@@ -8,20 +8,20 @@ create_plot <- function(df, select){
     p <- ggplot(df, aes(x=suicide_rate, y=gdp)) + 
       geom_point()+
       geom_smooth(method=lm)+
-      labs(title = 'The relationship between GDP and Suicide Rate', x = 'Suicide Rate',
-           y = 'GDP Per Capita')
+      labs(title = 'The relationship between GDP and Suicide Rate', x = 'Suicide Rate(Unit:Percentage)',
+           y = 'GDP Per Capita(Unit:Percentage)')
   } else if(select == 'Health'){
     p <- ggplot(df, aes(x=suicide_rate, y=health_spend)) + 
       geom_point()+
       geom_smooth(method=lm)+
-      labs(title = 'The relationship between Health Expenditure and Suicide Rate', x = 'Suicide Rate',
-           y = 'Health Expenditure')
+      labs(title = 'The relationship between Health Expenditure and Suicide Rate', x = 'Suicide Rate(Unit:Percentage)',
+           y = 'Health Expenditure(Unit:Percentage)')
   } else if(select == 'Unemployment'){
     p <- ggplot(df, aes(x=suicide_rate, y=unemployment)) + 
       geom_point()+
       geom_smooth(method=lm)+
-      labs(title = 'The relationship between Unemployment Rate and Suicide Rate', x = 'Suicide Rate',
-           y = 'Unemployment Rate')
+      labs(title = 'The relationship between Unemployment Rate and Suicide Rate', x = 'Suicide Rate(Unit:Percentage)',
+           y = 'Unemployment Rate(Unit:Percentage)')
   }
   return(p)
 }
@@ -43,8 +43,10 @@ create_text <- function(select){
     with higher health expenditure. Therefore, health expenditure is not a determinant external factor to 
     the suicide rates.'
   }else if(select == 'Unemployment'){
-    text <- 'According to the visual output, we can tell the distribution of the unemployment rate 
-    and suicide rate are pretty random and distributed. We can not observe any obvious relation between 
+    text <- 'As some cases of suicide accident were related to losing a job or economic regression, we want to explore if
+    the unemployment rate is a determinant external factor to suicide rates. According to the visual output, 
+    we can tell the distribution of the unemployment rate 
+    and the suicide rate is pretty random and distributed. We can not observe any obvious relation between 
     these two variables which means the unemployment rate is not an external factor related to the suicide 
     rates.'
   }
