@@ -8,27 +8,27 @@ create_plot <- function(df, select){
   
 #Create plot when users choose GDP 
   if(select == 'GDP'){
-    p <- ggplot(df, aes(x=suicide_rate, y=gdp)) + 
+    p <- ggplot(df, aes(y=suicide_rate, x=gdp, label = country)) + 
       geom_point()+
       geom_smooth(method=lm)+
-      labs(title = 'The relationship between GDP and Suicide Rate', x = 'Suicide Rate(Unit:Numbers per 100k Population)',
-           y = 'GDP Per Capita(Unit:US$)')
+      labs(title = 'The relationship between GDP and Suicide Rate', y = 'Suicide Rate(Unit:Numbers per 100k Population)',
+           x = 'GDP Per Capita(Unit:US$)')
     
 #Create plot when users choose Health
   } else if(select == 'Health'){
-    p <- ggplot(df, aes(x=suicide_rate, y=health_spend)) + 
+    p <- ggplot(df, aes(y=suicide_rate, x=health_spend, label = country)) + 
       geom_point()+
       geom_smooth(method=lm)+
-      labs(title = 'The relationship between Health Expenditure per Capita and Suicide Rate', x = 'Suicide Rate(Unit:Numbers per 100k Population)',
-           y = 'Health Expenditure per capita(Unit:US$)')
+      labs(title = 'The relationship between Health Expenditure per Capita and Suicide Rate', y = 'Suicide Rate(Unit:Numbers per 100k Population)',
+           x = 'Health Expenditure per capita(Unit:US$)')
     
 #Create plot when users choose Unemployment
   } else if(select == 'Unemployment'){
-    p <- ggplot(df, aes(x=suicide_rate, y=unemployment)) + 
+    p <- ggplot(df, aes(y=suicide_rate, x=unemployment, label = country)) + 
       geom_point()+
       geom_smooth(method=lm)+
-      labs(title = 'The relationship between Unemployment Rate and Suicide Rate', x = 'Suicide Rate(Unit:Numbers per 100k Population)',
-           y = 'Unemployment Rate(Unit:Percentage)')
+      labs(title = 'The relationship between Unemployment Rate and Suicide Rate', y = 'Suicide Rate(Unit:Numbers per 100k Population)',
+           x = 'Unemployment Rate(Unit:Percentage)')
   }
   
 #use plotly package to return the plot with hover function

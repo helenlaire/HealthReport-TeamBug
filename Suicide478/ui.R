@@ -27,12 +27,12 @@ protective_factor_list <- list("Health Care Coverage" = "HLTHPLN1",
                                "Education Level" = "EDUCA")
 
 combined_df <- read.csv(file = "Overall-Claire/data/combined.csv")
-combined_list <- combined_df %>% filter(States != "United States")
+combined_list <- combined_df %>% dplyr::filter(States != "United States")
 state_list <- unique(combined_list$States) 
 gender_list <- unique(combined_df$Gender)
 
 shinyUI(tagList(
-  headerPanel("Suicide Guide"),
+  headerPanel("Suicide Prevention Guide"),
   fluidPage(
     theme = shinytheme("slate"),
     tabsetPanel(

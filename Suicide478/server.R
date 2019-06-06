@@ -88,7 +88,7 @@ shinyServer(function(input, output, session) {
     cat("In year ", 
         input$year, 
         ", the relative risks for depressive order for males are as followed: \n\n", sep = '')
-    temp <- data() %>% filter(Sex == "Male")
+    temp <- data() %>% dplyr::filter(Sex == "Male")
     generatesText(temp)
   })
   
@@ -97,7 +97,7 @@ shinyServer(function(input, output, session) {
     cat("In year ", 
         input$year, 
         ", the relative risks for depressive order for females are as followed: \n\n", sep = '')
-    temp <- data() %>% filter(Sex == "Female")
+    temp <- data() %>% dplyr::filter(Sex == "Female")
     generatesText(temp)
   })
   
