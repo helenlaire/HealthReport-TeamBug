@@ -44,7 +44,7 @@ shinyServer(function(input, output, session) {
       geom_point() +
       xlab("Relative Risk Factors") +
       ylab("Relative Risk") +
-      labs(title = "Relative Risk Analysis For Depressive Order")
+      labs(title = "Relative Risk Analysis For Depressive Disorder")
     ggplotly(p)
   })
   
@@ -78,7 +78,7 @@ shinyServer(function(input, output, session) {
       }
       sex = as.character(temp[i, ]$Sex)
       value = as.character(round(temp[i, ]$Value, 2))
-      cat("The risk of developing depressive order was ", value, 
+      cat("The risk of developing depressive disorder was ", value, 
           " times higher for ", metric, " than for those who weren't ", metric,"\n\n") 
     }
   } 
@@ -87,7 +87,7 @@ shinyServer(function(input, output, session) {
   output$explain_male <- renderPrint({
     cat("In year ", 
         input$year, 
-        ", the relative risks for depressive order for males are as followed: \n\n", sep = '')
+        ", the relative risks for depressive disorder for males are as followed: \n\n", sep = '')
     temp <- data() %>% dplyr::filter(Sex == "Male")
     generatesText(temp)
   })
@@ -96,7 +96,7 @@ shinyServer(function(input, output, session) {
   output$explain_female <- renderPrint({
     cat("In year ", 
         input$year, 
-        ", the relative risks for depressive order for females are as followed: \n\n", sep = '')
+        ", the relative risks for depressive disorder for females are as followed: \n\n", sep = '')
     temp <- data() %>% dplyr::filter(Sex == "Female")
     generatesText(temp)
   })
